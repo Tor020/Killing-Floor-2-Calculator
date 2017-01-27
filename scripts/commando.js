@@ -8,6 +8,7 @@ var scar = 50;
 var hpr = .25;
 
 
+var plvl = #("#perklvl").val();
 
 
 function dmg calc() {
