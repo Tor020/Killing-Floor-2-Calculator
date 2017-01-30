@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	 <link rel ="icon" href = "images/webico.ico">
 
-	<title> KF2 Calculator</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="images/webico.ico">
 
-  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
-	<link href="bootstrap/css/dashboard.css" rel ="stylesheet">
-	<link href="styles/main.css" rel = "stylesheet" type = "text/css">
+        <title> KF2 Calculator</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="bootstrap/css/dashboard.css" rel="stylesheet">
+        <link href="styles/main.css" rel="stylesheet" type="text/css">
 
 
-</head>
-<body>
+    </head>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
+    <body>
 
-        <!--  
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+
+                    <!--  
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar">what </span>
@@ -31,96 +33,55 @@
           -->
 
 
-          <a class="navbar-brand" href="index.html">Killing Floor 2 Damage Calculator</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html">Dashboard</a></li>
-            <li><a href="https://www.reddit.com/r/killingfloor/">KF Subreddit</a></li>
-            <li><a href="https://docs.google.com/spreadsheets/d/1GDpg2mN1l_86U_RaDug0glFx8cZCuErwxZLiBKl9SyY/edit#gid=2068776317">Killing Floor 2 Stats Spreadsheet</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
+                    <a class="navbar-brand" href="index.html">Killing Floor 2 Damage Calculator</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="https://www.reddit.com/r/killingfloor/">KF Subreddit</a></li>
+                        <li><a href="https://docs.google.com/spreadsheets/d/1GDpg2mN1l_86U_RaDug0glFx8cZCuErwxZLiBKl9SyY/edit#gid=2068776317">Killing Floor 2 Stats Spreadsheet</a></li>
 
-        </div>
-      </div>
-    </nav>
+                    </ul>
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
-          <ul class="nav nav-sidebar">
-            <li class="active"><a href="index.html">Overview <span class="sr-only">(current)</span></a></li>
-           <li><a href="berserker.html">Berserker</a></li>
-            <li><a href="commando.html">Commando</a></li>
-            <li><a href="demolitionist.html">Demolitionist</a></li>
-            <li><a href="firebug.html">Firebug</a></li>
-            <li><a href="gunslinger.html">Gunslinger</a></li>
-            <li><a href="sharpshooter.html">Sharpshooter</a></li>
-            <li><a href="support.html">Support</a></li>
-            <li><a href="survivalist.html">Survivalist</a></li>
-            <li><a href="swat.html">SWAT</a></li>
-          </ul>
-
-        </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-
-
-          <div class="row placeholders">
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
+                </div>
             </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
+        </nav>
 
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-          </div>
-            <div>
-            <label>Perk Level <input type="number" id="perklvl" name="perklvl" min="1" max="25" value="1"></label>
-            </div>
-          <h2 class="sub-header">Damage Calculation</h2>
-          <div class="table-responsive">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>Gun</th>
-                  <th>Base Damage</th>
-                  <th></th>
-                  <th></th>
-                  <th>Damage After Perk Bonus</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>              
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3 col-md-2 sidebar">
+                    <ul class="nav nav-sidebar">
+                        <li class="active"><a href="index.html">Overview </a></li><span class="sr-only">(current)</span>
+                        <li><a href="berserker.html">Berserker</a></li>
+                        <li><a href="commando.html">Commando</a></li>
+                        <li><a href="demolitionist.html">Demolitionist</a></li>
+                        <li><a href="fieldmedic.html">Field Medic</a></li>
+                        <li><a href="firebug.html">Firebug</a></li>
+                        <li><a href="gunslinger.html">Gunslinger</a></li>
+                        <li><a href="sharpshooter.html">Sharpshooter</a></li>
+                        <li><a href="support.html">Support</a></li>
+                        <li><a href="survivalist.html">Survivalist</a></li>
+                        <li><a href="swat.html">SWAT</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 
-	<script src = "scripts/main.js"> </script>
-		    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src=bootstrap/js/jquery.min.js><\/script>')</script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
 
-	</body>
+
+
+
+
+
+        <script src="scripts/main.js"></script>
+
+        <script src="       INSERT CLASS JS SCRIPT                   " /> </script>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>
+            window.jQuery || document.write('<script src=bootstrap/js/jquery.min.js><\/script>')
+        </script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    </body>
+
 </html>
-
