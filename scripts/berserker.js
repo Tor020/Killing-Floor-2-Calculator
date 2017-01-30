@@ -1,5 +1,3 @@
-/*
-
 var plvl = $("#perkLVL").val();
 
 // Shorthand for $( document ).ready()
@@ -73,5 +71,3 @@ $("#perkLVL").on("click change blur focus", function() {
         $(".res3").html(calc3);
     }
 });
-
-*/
