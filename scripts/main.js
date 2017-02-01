@@ -23,7 +23,7 @@ $(function() {
 
 });
 
-//this fucntion prevents inputs more than 25
+//this function prevents inputs more than 25
 $('#perkLVL').on('keyup keydown', function(e) {
     console.log($(this).val() > 25)
     if

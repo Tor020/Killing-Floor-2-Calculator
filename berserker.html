@@ -73,7 +73,11 @@
                             <div class="col-xs-6 col-sm-3">
                                 <label>Perk Level <input type="number" class="equipCatValidation" id="perkLVL" name="perklevel" min="1" max="25" value="1"></label>
                             </div>
-                            <div class="col-xs-6 col-sm-3" <div class="checkbox"> <label><input type="checkbox" id="chkHPR" value="" >Hollow Point Rounds</label>
+                            <div class="col-xs-6 col-sm-3" <div class="checkbox"> <label><input type="checkbox" id="chkbutch" value="" >Butcher</label>
+                            </div>
+                            <div class="col-xs-6 col-sm-3" <div class="checkbox"> <label><input type="checkbox" id="chksmash" value="" >Smash</label>
+                            </div>
+                            <div class="col-xs-6 col-sm-3" <div class="checkbox"> <label><input type="checkbox" id="chkmass" value="" >Massacre</label>
                             </div>
                         </div>
                     </div>
@@ -87,7 +91,7 @@
                                     <th>Light Attack</th>
                                     <th>Strong Attack</th>
                                     <th>Bash/Stab/Explosion</th>
-                                    <th>Total Damage with Perks Applied</th>
+                                    <th>Total Damage with Perks Applied light/strong/misc</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -96,49 +100,73 @@
                                     <td>49</td>
                                     <td>86</td>
                                     <td>15</td>
-                                    <td><span class="res1"></span></td>
+                                    <td>
+                                    <span class="cst1"></span>
+                                    <span class="cst2"></span>
+                                    <span class="cst3"></span>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Katana</td>
                                     <td>68</td>
                                     <td>90</td>
                                     <td>68</td>
-                                    <td><span class="res1"></span></td>
+                                    <td>
+                                    <span class ="kat1"></span>
+                                    <span class ="kat2"></span>
+                                    <span class ="kat3"></span>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Pulverizer</td>
                                     <td>70</td>
                                     <td>145</td>
                                     <td>383 explosion</td>
-                                    <td><span class="res1"></span></td>
+                                    <td>
+                                    <span class="pulv1"></span>
+                                    <span class="pulv2"></span>
+                                    <span class="pulv3"></span>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Zweihander</td>
                                     <td>85</td>
                                     <td>195</td>
                                     <td>63</td>
-                                    <td><span class="res1"></span></td>
-                                </tr>
-                                <tr>
-                                    <td>Eviscerator</td>
-                                    <td>480</td>
-                                    <td>29</td>
-                                    <td>90</td>
-                                    <td><span class="res1"></span></td>
+                                    <td>
+                                    <span class="zwei1"></span>
+                                    <span class="zwei2"></span>
+                                    <span class="zwei3"></span>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Bone Crusher</td>
                                     <td>63</td>
                                     <td>165</td>
                                     <td>175</td>
-                                    <td></td>
+                                    <td>
+                                        <span class ="bc1"></span>
+                                        <span class ="bc2"></span>
+                                        <span class ="bc3"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Eviscerator</td>
+                                    <td>480</td>
+                                    <td>29</td>
+                                    <td>90</td>
+                                    <td>
+                                    <span class="evis1"></span>
+                                    <span class="evis2"></span>
+                                    <span class="evis3"></span>                                    
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>VLAD-1000 Nailgun</td>
                                     <td>30</td>
                                     <td>7 pellets</td>
                                     <td></td>
-                                    <td><span class="res1"></span></td>
+                                    <td><span class="ng1"></span></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -253,7 +281,7 @@
 
 
 
-        <script src="berserker.js" /> </script>
+        <script src="scripts/berserker.js"/> </script>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script>
