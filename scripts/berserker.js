@@ -19,8 +19,8 @@ var kat1 = 68;
 var kat2 = 98;
 
 var pull = 70;
-var pulh = 145 ;
-var pulm = 383 ;
+var pulh = 145;
+var pulm = 528;
 
 var zwel = 85 ;
 var zweh = 195 ;
@@ -127,7 +127,7 @@ $("#perkLVL, #chkbutch, #chksmash, #chkmass").on("click change blur focus", func
         katcalc2 = kat2 + (plvl * kat2) + (butch * kat2) + (smash * kat2);
         pulcalc1 = pull + (plvl * pull) + (butch * pull);
         pulcalc2 = pulh + (plvl * pulh) + (butch * pulh) + (smash * pulh);
-        pulcalc3 = pulm + (plvl * pulm) + (butch * pulm);
+        pulcalc3 = pulm + (plvl * pulm) + (butch * pulm) + (smash * pulm);
         zweic1 = zwel + (plvl * zwel) + (butch * zwel);
         zweic2 = zweh + (plvl * zweh) + (butch * zweh) + (smash * zweh);
         zweic3 = zwem + (plvl * zwem) + (butch * zwem);

@@ -66,16 +66,28 @@
                 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 
 
-                    <div class="container-fluid">
+                <div class="container-fluid">
+                    <div class="row">
 
-                        <div class="row">
-                            <div class="col-xs-6 col-sm-3">
-                                <label>Perk Level <input type="number" class="equipCatValidation" id="perkLVL" name="perklevel" min="1" max="25" value="1"></label>
+                        <div class="col-xs-6 col-sm-3">
+                            <label>Perk Level <input type="number" class="equipCatValidation" id="perkLVL" name="perklevel" min="1" max="25" value="1"> </label>
                             </div>
-                            <div class="col-xs-6 col-sm-3" <div class="checkbox"> <label><input type="checkbox" id="chkHPR" value="" >Hollow Point Rounds</label>
+
+
+                        <div class="col-xs-6 col-sm-3">
+                            <label><input type="checkbox" id="chkBone" value="">Bone Breaker </label>
                             </div>
+
+                        <div class="col-xs-6 col-sm-3">
+                            <label> <input type="checkbox" id="rackemchk" value=""><input type="number" id="rackem" min="1" max="5" value="">  Rack em Up </label>
+                           
+                            
                         </div>
-                    </div>
+
+                     </div>
+                </div>
+
+
 
                     <h2 class="sub-header">Damage Calculation</h2>
                     <div class="table-responsive">
@@ -84,8 +96,8 @@
                                 <tr>
                                     <th>Gun</th>
                                     <th>Base Damage</th>
-                                    <th></th>
-                                    <th></th>
+                                    <th>Pellets</th>
+                                    <th>Damage Per Pellet</th>
                                     <th>Total Damage with Perks Applied</th>
                                 </tr>
                             </thead>
@@ -95,7 +107,7 @@
                                     <td>30</td>
                                     <td></td>
                                     <td></td>
-                                    <td><span class="1858"></span></td>
+                                    <td><span class="rev1858"></span></td>
                                 </tr>
                                 <tr>
                                     <td>M1911 Pistol</td>
@@ -135,9 +147,9 @@
                                 <tr>
                                     <td>HX25 Grenade Pistol</td>
                                     <td>30</td>
-                                    <td>7 pellets</td>
-                                    <td></td>
+                                    <td>7</td>
                                     <td><span class="hx25"></span></td>
+                                    <td><span class="hx25a"></span></td>
                                 </tr>
                             </tbody>
                         </table>

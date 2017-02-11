@@ -55,12 +55,12 @@ $('#perkLVL').on('keyup keydown', function(e) {
 $("#perkLVL").on("click change blur focus", function() {
     if ($('#chkHPR').is(':checked')) {
         plvl = $("#perkLVL").val();
-        console.log(plvl);
+   
         plvl = plvl * .01;
-        console.log(plvl)
+   
 
         calc1 = (varm + (hpr * varm) + (plvl * varm));
-        console.log((varm + (hpr * varm) + (plvl * varm)));
+
         calc2 = (ak47 + (hpr * ak47) + (plvl * ak47));
         calc3 = (scar + (hpr * scar) + (plvl * scar));
         calc1 = Math.ceil(calc1);
