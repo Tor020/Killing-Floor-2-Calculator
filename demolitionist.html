@@ -71,12 +71,23 @@
 
                     <div class="container-fluid">
 
-                        <div class="row">
+
+                        </div>
+                         <div class="row">
+                            <div class="col-xs-6 col-sm-2 col-lg-1" <div class="checkbox"> <label><input type="checkbox" id="chkHPR" value="" >Bombardier</label>
+                            </div>
+                             <div class="col-xs-6 col-sm-3 col-lg-2" <div class="checkbox"> <label><input type="checkbox" id="chkHPR" value="" >High Impact Rounds</label>
+                            </div>
+                             <div class="col-xs-6 col-sm-4 col-lg-2" <div class="checkbox"> <label><input type="checkbox" id="chkHPR" value="" >Fragmentation Rounds</label>
+                            </div>
+                             <div class="col-xs-6 col-sm-3 col-lg-2" <div class="checkbox"> <label><input type="checkbox" id="chkHPR" value="" >Armor Piercing Rounds </label>
+                            </div>
+
+                        </div>
+                            <div class="row">
+
                             <div class="col-xs-6 col-sm-3">
                                 <label>Perk Level <input type="number" class="equipCatValidation" id="perkLVL" name="perklevel" min="1" max="25" value="1"></label>
-                            </div>
-                            <div class="col-xs-6 col-sm-3" <div class="checkbox"> <label><input type="checkbox" id="chkHPR" value="" >Hollow Point Rounds</label>
-                            </div>
                         </div>
                     </div>
 
@@ -98,39 +109,52 @@
                                     <td>30</td>
                                     <td>7 pellets</td>
                                     <td></td>
-                                    <td><span class="res1"></span></td>
-                                </tr>
-                                <tr>
-                                    <td>C4 Explosives</td>
-                                    <td>820</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td><span class="res1"></span></td>
+                                    <td><span class="hx25"></span></td>
                                 </tr>
                                 <tr>
                                     <td>M79 Grenade Launcher</td>
                                     <td>225</td>
                                     <td></td>
                                     <td></td>
-                                    <td><span class="res1"></span></td>
+                                    <td><span class="m79"></span></td>
                                 </tr>
                                 <tr>
                                     <td>RPG-7</td>
                                     <td>750</td>
                                     <td></td>
                                     <td></td>
-                                    <td><span class="res1"></span></td>
+                                    <td><span class="rpg"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>C4 Explosives</td>
+                                    <td>820</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><span class="c4"></span>
+                                </td>
                                 </tr>
                                 <tr>
                                     <td>M16 M203 Assault Rifle</td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
-                                    <td><span class="res1"></span></td>
+                                    <td><span class="m16"></span></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
+
+                                            <p>Note: all damage numbers for melee weapons are taken at their highest values.</p>
+                                            <p>Impact damage is not considered for the RPG or M79 in the table.</p>
+                                            <p>For reference impact damage is 150.</p>
+                        <blockquote>
+                        Most explosives lose their effectiveness (damage) on the distance from explosion epicenter.  
+
+                        0 (none) = Explosion does full damage within its radius, 1 (linear) = damage over range changes linearly from the maximum at epicenter to the minimum at the edge, 0.5/2/3 (exponential) = damage over the range changes by formula: Final Damage = Base Damage x ((Proximity Percentage) ^ Falloff value).                         
+                             
+                        <footer>Killing Floor 2 Stats Spreadsheet</footer>
+                        </blockquote> 
+                       <p> See the <a href="https://docs.google.com/spreadsheets/d/1GDpg2mN1l_86U_RaDug0glFx8cZCuErwxZLiBKl9SyY/edit#gid=2068776317">spreadsheet</a> for more information</p>
                     <h2 class="sub-header">ZEDS</h2>
                     <div class="table-responsive">
                         <table class="table table-striped">

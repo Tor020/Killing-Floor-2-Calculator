@@ -7,6 +7,8 @@ var boneBal = .50;
 //rackem
 var rack = 0;
 
+
+//base damage of each of the core guns
 var rev18 = 30;
 var m1911 = 50;
 var deagle = 91;
