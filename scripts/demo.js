@@ -4,15 +4,21 @@
 
 //base damage of each of the core guns
 var grenp = 30;
-var m16Bull = 30;
+var c4= 820;
 var rpg =  750;
 var m79 =  225;
 
-
+//On direct hits ballistic damage is always applied. 
 
 //perk 
 var bomba = .25;
-var fragr = .30;
+
+
+var fragr = .30; //reduces damage done.
+
+
+
+
 var himpa = .20;  //direct hits damage to any area
 var apr = .50;    //direct hts to critical areas         150 damage base
 // doesn't increase damage var madBo = .25;  //Only active during ZED time
@@ -24,7 +30,10 @@ $(function(){
 	//perk level
 	var plvl = $("#perkLVL").val();
 
-
+        calc1 = grenp + (plvl * grenp);
+        calc2 = m79 + (plvl * m79);
+        calc3 = rpg + (plvl * rpg);
+        calc4 = c4 + (plvl * c4);
 
 
 
@@ -32,13 +41,13 @@ $(function(){
         calc2 = Math.round(calc2);
         calc3 = Math.round(calc3);
         calc4 = Math.round(calc4);
-        calc5 = Math.round(calc5)
 
-        $(".mp7").html(calc1);
-        $(".mp5").html(calc2);
-        $(".p90").html(calc3);
-        $(".kris").html(calc4);
-        $(".hmtsmg").html(calc5);
+
+        $(".hx25").html(calc1);
+        $(".m79").html(calc2);
+        $(".rpg").html(calc3);
+        $(".c4").html(calc4);
+        $(".m16").html(calc2;
 
 
 	}
