@@ -1,5 +1,5 @@
-/*
 
+/*
 var plvl = $("#perkLVL").val();
 
 // Shorthand for $( document ).ready()

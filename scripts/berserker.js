@@ -11,6 +11,10 @@ var smashHead = .25;
 //lmb
 var mass = .30;
 
+var knifeli = 32;
+var knifehe = 64;
+var knifesta = 15;
+
 var cstl = 49;
 var csth = 86;
 var cstm = 15;
@@ -39,6 +43,8 @@ var vlad = 30;
 // Shorthand for $( document ).ready()
 $(function() {
     {
+
+        $(".moreInfoDiv").hide();
         plvl = $("#perkLVL").val();
         plvl = plvl * .01;
 
@@ -99,9 +105,20 @@ $(function() {
         $(".bc2").html(bchc);
         $(".bc3").html(bcmc);
         $(".ng1").html(vladc);
+        $(".ng2").html(vladc*7);
     }
 
 });
+
+
+$('#moreInfoButton').click(function(){
+
+    $(".moreInfoDiv").toggle();
+
+});
+
+
+
 //this function prevents inputs more than 25
 $('#perkLVL').on('keyup keydown', function(e) {
     console.log($(this).val() > 25)
@@ -177,6 +194,7 @@ $("#perkLVL, #chkbutch, #chksmash, #chkmass").on("click change blur focus", func
         $(".bc2").html(bchc);
         $(".bc3").html(bcmc);
         $(".ng1").html(vladc);
+        $(".ng2").html(vladc*7);
     } 
 //checking for butcher being checked
     else if ($('#chkbutch').is(':checked')) {
@@ -240,6 +258,7 @@ $("#perkLVL, #chkbutch, #chksmash, #chkmass").on("click change blur focus", func
         $(".bc2").html(bchc);
         $(".bc3").html(bcmc);
         $(".ng1").html(vladc);
+        $(".ng2").html(vladc*7);
     }
     //checking for mass and butcher being checked
     else if ($('#chkbutch').is(':checked') && $('#chkmass').is(':checked')) {
@@ -303,6 +322,7 @@ $("#perkLVL, #chkbutch, #chksmash, #chkmass").on("click change blur focus", func
         $(".bc2").html(bchc);
         $(".bc3").html(bcmc);
         $(".ng1").html(vladc);
+        $(".ng2").html(vladc*7);
     } 
 
     //checking if massacre only is checked
@@ -327,7 +347,7 @@ $("#perkLVL, #chkbutch, #chksmash, #chkmass").on("click change blur focus", func
         bclc = bcl + (plvl * bcl) + (mass* bcl);
         bchc = bch + (plvl * bch);
         bcmc = bcm + (plvl * bcm);
-        vladc  = vlad + (plvl * vlad) ;
+        vladc  = vlad + (plvl * vlad);
 
         cstcalc1 = Math.round(cstcalc1);
         cstcalc2 = Math.round(cstcalc2);
@@ -367,6 +387,7 @@ $("#perkLVL, #chkbutch, #chksmash, #chkmass").on("click change blur focus", func
         $(".bc2").html(bchc);
         $(".bc3").html(bcmc);
         $(".ng1").html(vladc);
+        $(".ng2").html(vladc*7);
     }
     //check if smash is being added
        else if ($('#chksmash').is(':checked')) {
@@ -431,6 +452,7 @@ $("#perkLVL, #chkbutch, #chksmash, #chkmass").on("click change blur focus", func
         $(".bc2").html(bchc);
         $(".bc3").html(bcmc);
         $(".ng1").html(vladc);
+        $(".ng2").html(vladc*7);
     }
     //if nothings checked
     else {
@@ -494,6 +516,7 @@ $("#perkLVL, #chkbutch, #chksmash, #chkmass").on("click change blur focus", func
         $(".bc2").html(bchc);
         $(".bc3").html(bcmc);
         $(".ng1").html(vladc);
+        $(".ng2").html(vladc*7);
     }
     
 });

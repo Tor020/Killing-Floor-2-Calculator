@@ -5,6 +5,9 @@ var c4= 820;
 var rpg =  750;
 var m79 =  225;
 
+var knifeli = 32;
+var knifehe = 64;
+var knifesta = 15;
 
 //perk 
 var bomba = .25;

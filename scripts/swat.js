@@ -4,6 +4,10 @@ var p90 = 30;
 var kriss = 33;
 var hmt201  = 20;
 
+var knifeli = 32;
+var knifehe = 64;
+var knifesta = 15;
+
 //this function prevents inputs more than 25
 $('#perkLVL').on('keyup keydown', function(e) {
     console.log($(this).val() > 25)

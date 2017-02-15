@@ -17,6 +17,9 @@ var winch = 80;
 var hmtp = 20;
 var grenp = 30;
 
+var knifeli = 32;
+var knifehe = 64;
+var knifesta = 15;
 $(function() {
     {
     	$("#rackem").hide();

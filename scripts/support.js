@@ -11,7 +11,25 @@ var pellethmt = 6;
 var salv = .30;
 
 
+var knifeli = 32;
+var knifehe = 64;
+var knifesta = 15;
+
 var plvl = $("#perkLVL").val();
+
+
+
+
+$('#perkLVL').on('keyup keydown', function(e) {
+    console.log($(this).val() > 25)
+    if
+    //e.keyCode != 46 aka delete
+    //e.keyCode != 8 aka backspace
+    ($(this).val() > 25 && e.keyCode != 46 && e.keyCode != 8) {
+        e.preventDefault();
+        $(this).val(25);
+    }
+});
 
 
 	$(function() {

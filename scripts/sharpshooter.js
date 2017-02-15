@@ -11,6 +11,9 @@ var sniper = .25;
 var stab = .30;
 var rack = 0;
 
+var knifeli = 32;
+var knifehe = 64;
+var knifesta = 15;
 
 
 // Shorthand for $( document ).ready()
@@ -72,7 +75,7 @@ $("#sniper, #stability, #rackemchk, #rackem").on("click change blur focus", func
 if  ($('#sniper').is(':checked') && $('#stability').is(':checked') && $('#rackemchk').is(':checked'))
     {
 
-            $('#rackem').show();
+        $('#rackem').show();
        console.log("All 3 boxes have been checked")
         rack = $("#rackem").val();
         rack = rack * .1;
@@ -95,8 +98,8 @@ if  ($('#sniper').is(':checked') && $('#stability').is(':checked') && $('#rackem
       
 
         $(".1858").html(calc1);
-        $(".rail").html(calc2);
-        $(".m14").html(calc3);
+        $(".m14").html(calc2);
+        $(".rail").html(calc3);
         $(".mag500").html(calc4);
         $(".winc").html(calc5);
         $(".xbow").html(calc6);
@@ -158,8 +161,8 @@ if  ($('#sniper').is(':checked') && $('#stability').is(':checked') && $('#rackem
       
 
         $(".1858").html(calc1);
-        $(".rail").html(calc2);
-        $(".m14").html(calc3);
+        $(".m14").html(calc2);
+        $(".rail").html(calc3);
         $(".mag500").html(calc4);
         $(".winc").html(calc5);
         $(".xbow").html(calc6);
@@ -191,8 +194,8 @@ if  ($('#sniper').is(':checked') && $('#stability').is(':checked') && $('#rackem
       
 
         $(".1858").html(calc1);
-        $(".rail").html(calc2);
-        $(".m14").html(calc3);
+        $(".m14").html(calc2);
+        $(".rail").html(calc3);
         $(".mag500").html(calc4);
         $(".winc").html(calc5);
         $(".xbow").html(calc6);
@@ -220,8 +223,8 @@ if  ($('#sniper').is(':checked') && $('#stability').is(':checked') && $('#rackem
       
 
         $(".1858").html(calc1);
-        $(".rail").html(calc2);
-        $(".m14").html(calc3);
+        $(".m14").html(calc2);
+        $(".rail").html(calc3);
         $(".mag500").html(calc4);
         $(".winc").html(calc5);
         $(".xbow").html(calc6);
@@ -249,8 +252,8 @@ if  ($('#sniper').is(':checked') && $('#stability').is(':checked') && $('#rackem
       
 
         $(".1858").html(calc1);
-        $(".rail").html(calc2);
-        $(".m14").html(calc3);
+        $(".m14").html(calc2);
+        $(".rail").html(calc3);
         $(".mag500").html(calc4);
         $(".winc").html(calc5);
         $(".xbow").html(calc6);
@@ -284,8 +287,8 @@ if  ($('#sniper').is(':checked') && $('#stability').is(':checked') && $('#rackem
       
 
         $(".1858").html(calc1);
-        $(".rail").html(calc2);
-        $(".m14").html(calc3);
+        $(".m14").html(calc2);
+        $(".rail").html(calc3);
         $(".mag500").html(calc4);
         $(".winc").html(calc5);
         $(".xbow").html(calc6);
@@ -312,260 +315,12 @@ if  ($('#sniper').is(':checked') && $('#stability').is(':checked') && $('#rackem
 
 
         $(".1858").html(calc1);
-        $(".rail").html(calc2);
-        $(".m14").html(calc3);
+        $(".m14").html(calc2);
+        $(".rail").html(calc3);
         $(".mag500").html(calc4);
         $(".winc").html(calc5);
         $(".xbow").html(calc6);
     }
 
     }); 
-    /**
-
-    if ($('#stability').is(':checked')) { 
-
-      
-
-        calc1 = rev18 + (rev18 * stab);
-        calc2 = m14 + (m14 * stab);
-        calc3 = rail + (rail * stab);
-        calc4 = mag500 + (mag500 * stab);
-        calc5 = winch  + (winch * stab);
-        calc6 = xbow +  (xbow * stab);
-       
-
-        calc1 = Math.ceil(calc1);
-        calc2 = Math.ceil(calc2);
-        calc3 = Math.ceil(calc3);
-        calc4 = Math.ceil(calc4);
-        calc5 = Math.ceil(calc5);
-        calc6 = Math.ceil(calc6);
-      
-
-        $(".1858").html(calc1);
-        $(".rail").html(calc2);
-        $(".m14").html(calc3);
-        $(".mag500").html(calc4);
-        $(".winc").html(calc5);
-        $(".xbow").html(calc6);
-
-
-    } 
-
-    else if ($('#sniper').is(':checked')) {
-       
-
-        calc1 = rev18 + (rev18 * sniper);
-        calc2 = m14 + (m14 * sniper);
-        calc3 = rail + (rail * sniper);
-        calc4 = mag500 + (mag500 * sniper);
-        calc5 = winch  + (winch * sniper);
-        calc6 = xbow + (xbow * sniper);
-
-
-        calc1 = Math.ceil(calc1);
-        calc2 = Math.ceil(calc2);
-        calc3 = Math.ceil(calc3);
-        calc4 = Math.ceil(calc4);
-        calc5 = Math.ceil(calc5);
-        calc6 = Math.ceil(calc6);
-      
-
-        $(".1858").html(calc1);
-        $(".rail").html(calc2);
-        $(".m14").html(calc3);
-        $(".mag500").html(calc4);
-        $(".winc").html(calc5);
-        $(".xbow").html(calc6);
-
-    
-    }
-
-    else if  ($('#sniper').is(':checked') && $('#stability').is(':checked') && $('#rackemchk').is(':checked'))
-    {
-       
-
-        calc1 = rev18 + (rev18 * stab) + (rev18 * sniper) + (rev18 * rackem);
-         calc2 = m14 + (m14 * stab) + (m14 * sniper) + (m14 * rackem);
-        calc3 = rail + (rail * stab) + (rail * sniper) + (rail * rackem);
-         calc4 = mag500 + (mag500 * stab) + (mag500 * sniper) + (mag500 * rackem);
-        calc5 = winch  + (winch * stab) + (winch * sniper) + (winch * rackem);
-        calc6 = xbow + (xbow * stab) + (xbow * snipe) + (xbow * rackem);
-       
-
-        calc1 = Math.ceil(calc1);
-        calc2 = Math.ceil(calc2);
-        calc3 = Math.ceil(calc3);
-        calc4 = Math.ceil(calc4);
-        calc5 = Math.ceil(calc5);
-        calc6 = Math.ceil(calc6);
-      
-
-        $(".1858").html(calc1);
-        $(".rail").html(calc2);
-        $(".m14").html(calc3);
-        $(".mag500").html(calc4);
-        $(".winc").html(calc5);
-        $(".xbow").html(calc6);
- 
-
-}
-
-
- else if   ($('#sniper').is(':checked') && $('#stability').is(':checked'))
-    {
-       
-
-        calc1 = rev18 + (rev18 * stab) + (rev18 * sniper);
-        calc2 = m14 + (m14 * stab) + (m14 * sniper);
-        calc3 = rail + (rail * stab) + (rail * sniper);
-        calc4 = mag500 + (mag500 * stab) + (mag500 * sniper);
-        calc5 = winch  + (winch * stab) + (winch * sniper);
-        calc6 = xbow + (xbow * stab) + (xbow * sniper);
-       
-
-        calc1 = Math.ceil(calc1);
-        calc2 = Math.ceil(calc2);
-        calc3 = Math.ceil(calc3);
-        calc4 = Math.ceil(calc4);
-        calc5 = Math.ceil(calc5);
-        calc6 = Math.ceil(calc6);
-      
-
-        $(".1858").html(calc1);
-        $(".rail").html(calc2);
-        $(".m14").html(calc3);
-        $(".mag500").html(calc4);
-        $(".winc").html(calc5);
-        $(".xbow").html(calc6);
-
-
-    
-
-}
- else if   ($('#sniper').is(':checked') && $('#rackemchk').is(':checked') )
-    {
-         $('#rackem').show();
-        rack = $("#rackem").val();
-        rack = rack * .1;
-
-
-        calc1 = rev18 + (rev18 * sniper) + (rev18 * rackem);
-        calc2 = m14 + (m14 * sniper) + (m14 * rackem);
-        calc3 = rail + (rail * sniper) + (rail * rackem);
-        calc4 = mag500 + (mag500 * sniper) + (mag500 * rackem);
-        calc5 = winch  + (winch * sniper) + (winch * rackem);
-        calc6 = xbow  + (xbow * sniper) + (xbow * rackem);
-       
-
-        calc1 = Math.ceil(calc1);
-        calc2 = Math.ceil(calc2);
-        calc3 = Math.ceil(calc3);
-        calc4 = Math.ceil(calc4);
-        calc5 = Math.ceil(calc5);
-        calc6 = Math.ceil(calc6);
-      
-
-        $(".1858").html(calc1);
-        $(".rail").html(calc2);
-        $(".m14").html(calc3);
-        $(".mag500").html(calc4);
-        $(".winc").html(calc5);
-        $(".xbow").html(calc6);
-  
-}
- else if ($('#rackemchk').is(':checked'))  {
-
-        $('#rackem').show();
-
-        rack = $("#rackem").val();
-        rack = rack * .1;
-
-
-       calc1 =  rev18 + (rev18 * rack);
-       calc2 =  m14 + (m14 * rack);
-       calc3 =  rail + (rail * rack);
-       calc4 =  mag500  + (mag500 * rack);
-       calc5 =  winch + (winch * rack);
-       calc6 =  xbow + (xbow * rack);
-
-        calc1 = Math.ceil(calc1);
-        calc2 = Math.ceil(calc2);
-        calc3 = Math.ceil(calc3);
-        calc4 = Math.ceil(calc4);
-        calc5 = Math.ceil(calc5);
-        calc6 = Math.ceil(calc6);
-      
-
-        $(".1858").html(calc1);
-        $(".rail").html(calc2);
-        $(".m14").html(calc3);
-        $(".mag500").html(calc4);
-        $(".winc").html(calc5);
-        $(".xbow").html(calc6);
-
- }
-
-  else if   ($('#stability').is(':checked') && $('#rackemchk').is(':checked') )
-    {
-        $('#rackem').show();
-        rack = $("#rackem").val();
-        rack = rack * .1;
-         
-
-        calc1 = rev18 + (rev18 * stab) + (rev18 * rackem);
-        calc2 = m14 + (m14 * stab) + (m14 * rackem);
-        calc3 = rail + (rail * stab) + (rail * rackem);
-        calc4 = mag500 + (mag500 * stab) + (mag500 * rackem);
-        calc5 = winch  + (winch * stab) + (winch * rackem);
-        calc6 = xbow  + (xbow * stab) + (xbow * rackem);
-       
-
-        calc1 = Math.ceil(calc1);
-        calc2 = Math.ceil(calc2);
-        calc3 = Math.ceil(calc3);
-        calc4 = Math.ceil(calc4);
-        calc5 = Math.ceil(calc5);
-        calc6 = Math.ceil(calc6);
-      
-
-        $(".1858").html(calc1);
-        $(".rail").html(calc2);
-        $(".m14").html(calc3);
-        $(".mag500").html(calc4);
-        $(".winc").html(calc5);
-        $(".xbow").html(calc6);
-}
-    else {
-
-        $("#rackem").hide();
-
-        calc1 = rev18;
-        calc2 = rail;
-        calc3 = m14;
-        calc4 = mag500;
-        calc5 = winch;
-        calc6 = xbow;
-
-        calc1 = Math.ceil(calc1);
-        calc2 = Math.ceil(calc2);
-        calc3 = Math.ceil(calc3);
-        calc4 = Math.ceil(calc4);
-        calc5 = Math.ceil(calc5);
-        calc6 = Math.ceil(calc6);
-
-
-        $(".1858").html(calc1);
-        $(".rail").html(calc2);
-        $(".m14").html(calc3);
-        $(".mag500").html(calc4);
-        $(".winc").html(calc5);
-        $(".xbow").html(calc6);
-    }
-
-
-
-
-    
-
-}); */
+   

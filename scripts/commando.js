@@ -9,6 +9,10 @@ ROUNDED or ROUNDED UP -
 var varm = 30;
 var ak47 = 40;
 var scar = 50;
+
+var knifeli = 32;
+var knifehe = 64;
+var knifesta = 15;
 //perk 
 var hpr = .25;
 var clco = 1.10;

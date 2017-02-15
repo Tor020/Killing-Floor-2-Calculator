@@ -72,120 +72,123 @@
 
                 </div>
                 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-
-
                     <div class="container-fluid">
-
-                        <div class="row">
-                            <div class="col-xs-6 col-sm-3 col-lg-2">
-                                <label>Perk Level <input type="number" class="equipCatValidation" id="perkLVL" name="perklevel" min="1" max="25" value="1"></label>
+                        <h3 class="sub-header">Set Perk Level and Skill Choices</h3>
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-3 col-lg-2">
+                                    <label>Perk Level <input type="number" class="equipCatValidation" id="perkLVL" name="perklevel" min="1" max="25" value="1"></label>
+                                </div>
+                                <div class="col-xs-6 col-sm-2 col-lg-1"> <label><input type="checkbox" id="chkbutch" value="" >Butcher</label>
+                                </div>
+                                <div class="col-xs-6 col-sm-2 col-lg-1 pull-right"> <label><input type="checkbox" id="chksmash" value="" >Smash</label>
+                                </div>
+                                <div class="col-xs-6 col-sm-2 col-lg-1 pull-right"> <label><input type="checkbox" id="chkmass" value="" >Massacre</label>
+                                </div>
                             </div>
-                            <div class="col-xs-6 col-sm-2 col-lg-1" <div class="checkbox"> <label><input type="checkbox" id="chkbutch" value="" >Butcher</label>
-                            </div>
-                            <div class="col-xs-6 col-sm-2 col-lg-1" <div class="checkbox"> <label><input type="checkbox" id="chksmash" value="" >Smash</label>
-                            </div>
-                            <div class="col-xs-6 col-sm-2 col-lg-1" <div class="checkbox"> <label><input type="checkbox" id="chkmass" value="" >Massacre</label>
-                            </div>
-                        </div>
                     </div>
 
-                    <h2 class="sub-header">Damage Calculation</h2>
+                    <h3 class="sub-header">Melee Weapons</h3>
                     <div class="table-responsive">
                         <table class="table table-striped">
                             <thead>
                                 <tr>
-                                    <th>Gun</th>
-                                    <th>Light Attack</th>
-                                    <th>Strong Attack</th>
-                                    <th>Alt Attack</th>
-                                    <th>Total Damage L/H/Alt</th>
+                                    <th>Weapon Name</th>
+                                    <th>Base Damages for Light/Heavy/Alternative Swings</th>
+                                    <th>Light Attack w/ perks</th>
+                                    <th>Heavy Attack w/ perks</th>
+                                    <th>Alt Attack w/ perks</th>
+                                    
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>Crovel Survival Tool</td>
-                                    <td>49</td>
-                                    <td>86</td>
-                                    <td>15</td>
-                                    <td>
-                                    <span class="cst1"></span>
-                                    <span class="cst2"></span>
-                                    <span class="cst3"></span>
-                                    </td>
+                                    <td>49/86/15</td>
+
+                                    <td><span class="cst1"></span></td>
+                                    <td><span class="cst2"></span></td>
+                                    <td><span class="cst3"></span> Bash Attack</td>
                                 </tr>
                                 <tr>
                                     <td>Katana</td>
-                                    <td>68</td>
-                                    <td>90</td>
-                                    <td>68</td>
-                                    <td>
-                                    <span class ="kat1"></span>
-                                    <span class ="kat2"></span>
-                                    <span class ="kat3"></span>
-                                    </td>
+                                    <td>68/90/68</td>
+
+                                    <td><span class ="kat1"></span></td>
+                                    <td><span class ="kat2"></span></td>
+                                    <td><span class ="kat3"></span> Stab Attack</td>
                                 </tr>
                                 <tr>
                                     <td>Pulverizer</td>
-                                    <td>70</td>
-                                    <td>145</td>
-                                    <td>528</td>
-                                    <td>
-                                    <span class="pulv1"></span>
-                                    <span class="pulv2"></span>
-                                    <span class="pulv3"></span>
-                                    </td>
+                                    <td>70/145/528</td>
+                                    <td><span class="pulv1"></span></td>
+                                    <td><span class="pulv2"></span></td>
+                                    <td><span class="pulv3"></span> Heavy w/ explosive</td>
                                 </tr>
                                 <tr>
                                     <td>Zweihander</td>
-                                    <td>85</td>
-                                    <td>195</td>
-                                    <td>63</td>
-                                    <td>
-                                    <span class="zwei1"></span>
-                                    <span class="zwei2"></span>
-                                    <span class="zwei3"></span>
-                                    </td>
-                                </tr>
+                                    <td>85/195/63</td>
+                                    <td><span class="zwei1"></span></td>
+                                    <td><span class="zwei2"></span></td>
+                                    <td><span class="zwei3"></span> Stab Attack</td>
+                                 </tr>                                   
                                 <tr>
                                     <td>Bone Crusher</td>
-                                    <td>63</td>
-                                    <td>165</td>
-                                    <td>175</td>
-                                    <td>
-                                        <span class ="bc1"></span>
-                                        <span class ="bc2"></span>
-                                        <span class ="bc3"></span>
-                                    </td>
+                                    <td>63/165/175</td>
+                                    <td><span class ="bc1"></span></td>
+                                    <td><span class ="bc2"></span></td>
+                                    <td><span class ="bc3"></span> Bash Attack</td>
                                 </tr>
+                            </tbody>
+                        </table>
+                    <h3 class="sub-header">Projectile Weapons</h3>
+                        <table class="table table-striped">
+                            <thead>
                                 <tr>
-                                    <td>Eviscerator</td>
-                                    <td>480</td>
-                                    <td>29</td>
-                                    <td>90</td>
-                                    <td>
-                                    <span class="evis1"></span>
-                                    <span class="evis2"></span>
-                                    <span class="evis3"></span>                                    
-                                    </td>
+                                    <th>Shotgun</th>
+                                    <th>Base Damage</th>
+                                    <th>Number of pellets</th>
+                                    <th>Scaled Perk Damage</th>
+                                    <th>Full Damage w/ All Pellets</th>
                                 </tr>
-                                <tr>
+                            </thead>
+                            <tbody>
+                                 <tr>
                                     <td>VLAD-1000 Nailgun</td>
                                     <td>30</td>
-                                    <td>7 pellets</td>
-                                    <td></td>
+                                    <td>7</td>
                                     <td><span class="ng1"></span></td>
+                                    <td><span class="ng2"></span></td>
+                                </tr>
+                            <thead>
+                                <tr>
+                                    <th>Sawblade Launcher</th>
+                                    <th>Base Damage</th>
+                                    <th>Primary</th>
+                                    <th>Chainsaw Altfire</th>
+                                    <th>Stab</th>
+                                    <th>Full Damage w/ All Pellets</th>
+                                </tr>
+                            </thead>
+                                <tr>
+                                    <td>Eviscerator</td>
+                                    <td>485/29/90</td>
+                                    <td><span class="evis1"></span></td>
+                                    <td><span class="evis2"></span></td>
+                                    <td><span class="evis3"></span></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
+                        <p>Click the button for information on how damage was calculated <button class="btn"type="button" id ="moreInfoButton">Info</button></p>
 
-                       
-                        <p>Note: All damage numbers for melee weapons are taken at their highest values:</p>
+                       <div class = "moreInfoDiv">
+                        <p>All damage numbers for melee weapons are taken at their highest values:</p>
                         <blockquote>
                         Damage dealt by melee weapons depend on attack direction and how well melee tracer was connected with ZEDs body - vertical strikes do more damage while horizontal strikes do less damage but have better AOE. Pure left or right (non-diagonal) strikes do never more than 75% and never less than 50% of the base weapon damage at a distance of player's viewport. Stab attacks are always doing full damage due to tracer nature.     
                         <footer>Killing Floor 2 Stats Spreadsheet</footer>
                         </blockquote> 
-                       <p> See the <a href="https://docs.google.com/spreadsheets/d/1GDpg2mN1l_86U_RaDug0glFx8cZCuErwxZLiBKl9SyY/edit#gid=2068776317">spreadsheet</a> for more information</p>
+                       <p> See the <a href="https://docs.google.com/spreadsheets/d/1GDpg2mN1l_86U_RaDug0glFx8cZCuErwxZLiBKl9SyY/edit#gid=2068776317">spreadsheet</a> for more details</p>
+                       </div>
                     <h2 class="sub-header">ZEDS</h2>
                     <div class="table-responsive">
                         <table class="table table-striped">
