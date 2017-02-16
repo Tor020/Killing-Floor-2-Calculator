@@ -1,60 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
-            <script>
-              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-              ga('create', 'UA-91874922-1', 'auto');
-              ga('send', 'pageview');
-            </script>
+        <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-91874922-1', 'auto');
+        ga('send', 'pageview');
+        </script>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="images/webico.ico">
-
         <title> KF2 Calculator</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="bootstrap/css/dashboard.css" rel="stylesheet">
-        <link href="styles/main.css" rel="stylesheet" type="text/css">
-
-
+        <link href="bootstrap/css/offcanvas.css" rel='stylesheet'>
+        <link href="styles/main.css" rel="stylesheet">
     </head>
-
     <body>
-
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
-
-                    <!--  
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar">what </span>
-        <span class="icon-bar">what</span>
-        <span class="icon-bar">what</span>
-          </button> 
-          -->
-
-
+                    
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"> </span>
+                    </button>
                     <a class="navbar-brand" href="index.html">Killing Floor 2 Damage Calculator</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="https://www.reddit.com/r/killingfloor/">KF Subreddit</a></li>
                         <li><a href="https://docs.google.com/spreadsheets/d/1GDpg2mN1l_86U_RaDug0glFx8cZCuErwxZLiBKl9SyY/edit#gid=2068776317">Killing Floor 2 Stats Spreadsheet</a></li>
-
                     </ul>
-
                 </div>
             </div>
         </nav>
-
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-3 col-md-2 sidebar">
@@ -70,22 +54,17 @@
                         <li><a href="support.html">Support</a></li>
                         <li><a href="survivalist.html">Survivalist</a></li>
                         <li><a href="swat.html">SWAT</a></li>
-
                     </ul>
-
                 </div>
                 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-
-
                     <div class="container-fluid">
-                         <h3 class="sub-header">Set Skill Choice</h3> 
+                        <h3 class="sub-header">Set Skill Choice</h3>
                         <div class="row">
-                            <div class="col-xs-6 col-sm-3"> 
+                            <div class="col-xs-6 col-sm-3">
                                 <label> <input type="checkbox" id="chkBS" value="">Battle Surgeon</label>
                             </div>
                         </div>
                     </div>
-
                     <h3 class="sub-header">Damage Calculation</h3>
                     <div class="table-responsive">
                         <table class="table table-striped">
@@ -105,7 +84,7 @@
                                     <td></td>
                                     <td></td>
                                     <td>
-                                    <span class="res1"></span>
+                                        <span class="res1"></span>
                                     </td>
                                 </tr>
                                 <tr>
@@ -114,152 +93,146 @@
                                     <td></td>
                                     <td></td>
                                     <td>
-                                    <span class="res2"></span>
+                                        <span class="res2"></span>
                                     </td>
                                 </tr>
-                                </tr>
-                                <tr>
-                                    <td>HMTech-401 Assault Rifle</td>
-                                    <td>40</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>
+                            </tr>
+                            <tr>
+                                <td>HMTech-401 Assault Rifle</td>
+                                <td>40</td>
+                                <td></td>
+                                <td></td>
+                                <td>
                                     <span class="res4"></span>
-                                    </td>
-                                </tr>
-                            </tbody>
-
-                            <thead>
-                                <tr>
-                                    <th>Shotgun</th>
-                                    <th>Base Damage</th>
-                                    <th>Number of pellets</th>
-                                    <th>Scaled Perk Damage</th>
-                                    <th>Full Damage w/ All Pellets</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>HMTech-301 Shotgun  </td>
-                                    <td>20</td>
-                                    <td>6</td>
-                                    <td><span class="res3"></span></td>
-                                    <td><span class="res3A"></span></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <h2 class="sub-header">ZEDS</h2>
-                    <div class="table-responsive">
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                    <th>ZED</th>
-                                    <th>Health</th>
-                                    <th>Head Health</th>
-                                    <th>Body Shots to Kill</th>
-                                    <th>Head Shots to Decap</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Cyst</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Alpha Clot</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Slasher</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Bloat</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Crawler</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Gorefast</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Stalker</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Husk</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Siren</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Scrake</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Fleshpound</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <thead>
+                            <tr>
+                                <th>Shotgun</th>
+                                <th>Base Damage</th>
+                                <th>Number of pellets</th>
+                                <th>Scaled Perk Damage</th>
+                                <th>Full Damage w/ All Pellets</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>HMTech-301 Shotgun  </td>
+                                <td>20</td>
+                                <td>6</td>
+                                <td><span class="res3"></span></td>
+                                <td><span class="res3A"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h2 class="sub-header">ZEDS</h2>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>ZED</th>
+                                <th>Health</th>
+                                <th>Head Health</th>
+                                <th>Body Shots to Kill</th>
+                                <th>Head Shots to Decap</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cyst</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Alpha Clot</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Slasher</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Bloat</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Crawler</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Gorefast</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Stalker</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Husk</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Siren</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Scrake</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Fleshpound</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
-        </div>
-
-        <script src="scripts/main.js"></script>
-
-
-
-        <script src="scripts/fieldmedic.js" /> </script>
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script>
-            window.jQuery || document.write('<script src=bootstrap/js/jquery.min.js><\/script>')
-        </script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-
-    </body>
-
+    </div>
+</div>
+<script src="scripts/main.js"></script>
+<script src="scripts/fieldmedic.js" /> </script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src=bootstrap/js/jquery.min.js><\/script>')
+</script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/offcanvas.js"></script>
+</body>
 </html>

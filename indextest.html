@@ -24,7 +24,7 @@
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span></button>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"> </span></button>
                     <a class="navbar-brand" href="index.html">Killing Floor 2 Damage Calculator</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
@@ -36,8 +36,9 @@
             </div>
         </nav>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-3 col-md-2 sidebar">
+            <div class="row row-offcanvas row-offcanvas-left">
+                <p class="pull-left visible-xs col-xs-offset-3"><button type="button" class="btn btn-marg btn-primary btn-xs" data-toggle="offcanvas">Toggle sidebar</button></p>
+                <div class="col-sm-3 col-md-2 col-xs-3 sidebar sidebar-offcanvas" id="sidebar">
                     <ul class="nav nav-sidebar">
                         <li class="active"><a href="index.html">Overview </a></li><span class="sr-only">(current)</span>
                         <li><a href="berserker.html">Berserker</a></li>
@@ -54,36 +55,23 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 col-xs-offset-3 main">
             <h3>How is weapon damage calculated?</h3>
             <p class = "well center-block">
                 Damage is calculated using the formula and examples provided on the kf2 stats spreadsheet.
             </p>
-
-            <h3>To do list</h3>
+            <h2>Todo</h2>
             <ul>
                 <li>FireBug</li>
                 <li>Survivalist</li>
                 <li>Add ZED HP/Headhealth</li>
                 <li>Add Demolitions impact damage option</li>
                 <li>Add tooltips on mouseover perk skills</li>
-                <li>Create collapsable sidebar functionality for all screen sizes</li>
             </ul>
-        
-            <br>
-            <br>
-            <br>
-            <h3>Website changelog</h3>
-            
-                <ul class = "well center-block">
-                <li>All mobile users should now be able to navigate the website with the sidebar links</li>
-                <li>Fixed HPR on commando perk damage</li>
-                <li></li>
-                </ul>
-            
         </div>
+        
         <footer class="footer">
-            <div class="container">
+            <div class="container-fluid">
                 <p class="text-muted">If you encounter any problems with the site, you can send me a message on <a href="https://www.reddit.com/user/SponsoredByMLGMtnDew/">reddit</p>
             </div>
         </footer>
@@ -94,7 +82,7 @@
         window.jQuery || document.write('<script src=bootstrap/js/jquery.min.js><\/script>')
         </script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="bootstrap/js/offcanvas.js"></script>
-</body>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="bootstrap/js/offcanvas.js"></script>
+    </body>
 </html>

@@ -25,13 +25,36 @@
   background-color: #efefef;
   text-align: center;
 }
-/*
-#rackem
-{
-  display:hidden;
-}
-*/
+
 
 .btn:focus,.btn:active {
-   outline: none !important;
+   outline: none !important;}
+   /*
+
 }
+html, body {
+   height: 100%;
+}
+
+
+
+Custom CSS rules for the sidebar 
+See dashboard.css for other rules 
+@media (max-width: 767px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: scroll;
+    overflow-y: auto;  Scrollable contents if viewport is shorter than content. 
+    background-color: 
+    border-right: 1px solid 
+  }
+}
+
+*/
+

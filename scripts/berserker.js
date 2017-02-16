@@ -24,7 +24,7 @@ var kat2 = 98;
 
 var pull = 70;
 var pulh = 145;
-var pulm = 528;
+var pulm = 528; 
 
 var zwel = 85 ;
 var zweh = 195 ;
@@ -458,7 +458,7 @@ $("#perkLVL, #chkbutch, #chksmash, #chkmass").on("click change blur focus", func
     else {
         plvl = $("#perkLVL").val();
         plvl = plvl * .01;
-
+        console.log(evimc);
         cstcalc1 = cstl + (plvl * cstl);
         cstcalc2 = csth + (plvl * csth);
         cstcalc3 = cstm + (plvl * cstm);

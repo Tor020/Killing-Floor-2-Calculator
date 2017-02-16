@@ -1,54 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
-            <script>
-              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-              ga('create', 'UA-91874922-1', 'auto');
-              ga('send', 'pageview');
-            </script>
+        <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-91874922-1', 'auto');
+        ga('send', 'pageview');
+        </script>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="images/webico.ico">
-
         <title> KF2 Calculator</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="bootstrap/css/dashboard.css" rel="stylesheet">
-        <link href="styles/main.css" rel="stylesheet" type="text/css">
+        <link href="bootstrap/css/offcanvas.css" rel='stylesheet'>
+        <link href="styles/main.css" rel="stylesheet">
     </head>
-
     <body>
-
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
-
-                    <!--  
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar">what </span>
-        <span class="icon-bar">what</span>
-        <span class="icon-bar">what</span>
-          </button> 
-          -->
-
-
+                    
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"> </span>
+                    </button>
                     <a class="navbar-brand" href="index.html">Killing Floor 2 Damage Calculator</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="https://www.reddit.com/r/killingfloor/">KF Subreddit</a></li>
                         <li><a href="https://docs.google.com/spreadsheets/d/1GDpg2mN1l_86U_RaDug0glFx8cZCuErwxZLiBKl9SyY/edit#gid=2068776317">Killing Floor 2 Stats Spreadsheet</a></li>
-
                     </ul>
-
                 </div>
             </div>
         </nav>
@@ -67,240 +54,227 @@
                         <li><a href="support.html">Support</a></li>
                         <li><a href="survivalist.html">Survivalist</a></li>
                         <li><a href="swat.html">SWAT</a></li>
-
                     </ul>
-
                 </div>
                 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
                     <div class="container-fluid">
                         <h3 class="sub-header">Set Perk Level and Skill Choices</h3>
-                            <div class="row">
-                                <div class="col-xs-6 col-sm-3 col-lg-2">
-                                    <label>Perk Level <input type="number" class="equipCatValidation" id="perkLVL" name="perklevel" min="1" max="25" value="1"></label>
-                                </div>
-                                <div class="col-xs-6 col-sm-2 col-lg-1"> <label><input type="checkbox" id="chkbutch" value="" >Butcher</label>
-                                </div>
-                                <div class="col-xs-6 col-sm-2 col-lg-1 pull-right"> <label><input type="checkbox" id="chksmash" value="" >Smash</label>
-                                </div>
-                                <div class="col-xs-6 col-sm-2 col-lg-1 pull-right"> <label><input type="checkbox" id="chkmass" value="" >Massacre</label>
-                                </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-3 col-lg-2">
+                                <label>Perk Level <input type="number" class="equipCatValidation" id="perkLVL" name="perklevel" min="1" max="25" value="1"></label>
                             </div>
+                            <div class="col-xs-6 col-sm-2 col-lg-1"> <label><input type="checkbox" id="chkbutch" value="" >Butcher</label>
+                        </div>
+                        <div class="col-xs-6 col-sm-2 col-lg-1 pull-right"> <label><input type="checkbox" id="chksmash" value="" >Smash</label>
                     </div>
-
-                    <h3 class="sub-header">Melee Weapons</h3>
-                    <div class="table-responsive">
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                    <th>Weapon Name</th>
-                                    <th>Base Damages for Light/Heavy/Alternative Swings</th>
-                                    <th>Light Attack w/ perks</th>
-                                    <th>Heavy Attack w/ perks</th>
-                                    <th>Alt Attack w/ perks</th>
-                                    
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Crovel Survival Tool</td>
-                                    <td>49/86/15</td>
-
-                                    <td><span class="cst1"></span></td>
-                                    <td><span class="cst2"></span></td>
-                                    <td><span class="cst3"></span> Bash Attack</td>
-                                </tr>
-                                <tr>
-                                    <td>Katana</td>
-                                    <td>68/90/68</td>
-
-                                    <td><span class ="kat1"></span></td>
-                                    <td><span class ="kat2"></span></td>
-                                    <td><span class ="kat3"></span> Stab Attack</td>
-                                </tr>
-                                <tr>
-                                    <td>Pulverizer</td>
-                                    <td>70/145/528</td>
-                                    <td><span class="pulv1"></span></td>
-                                    <td><span class="pulv2"></span></td>
-                                    <td><span class="pulv3"></span> Heavy w/ explosive</td>
-                                </tr>
-                                <tr>
-                                    <td>Bone Crusher</td>
-                                    <td>63/165/175</td>
-                                    <td><span class ="bc1"></span></td>
-                                    <td><span class ="bc2"></span></td>
-                                    <td><span class ="bc3"></span> Bash Attack</td>
-                                </tr>
-                                <tr>
-                                    <td>Zweihander</td>
-                                    <td>85/195/63</td>
-                                    <td><span class="zwei1"></span></td>
-                                    <td><span class="zwei2"></span></td>
-                                    <td><span class="zwei3"></span> Stab Attack</td>
-                                 </tr>                                   
-
-                            </tbody>
-                        </table>
-                    <h3 class="sub-header">Projectile Weapons</h3>
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                    <th>Shotgun</th>
-                                    <th>Base Damage</th>
-                                    <th>Number of pellets</th>
-                                    <th>Scaled Perk Damage</th>
-                                    <th>Full Damage w/ All Pellets</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                 <tr>
-                                    <td>VLAD-1000 Nailgun</td>
-                                    <td>30</td>
-                                    <td>7</td>
-                                    <td><span class="ng1"></span></td>
-                                    <td><span class="ng2"></span></td>
-                                </tr>
-                            <thead>
-                                <tr>
-                                    <th>Sawblade Launcher</th>
-                                    <th>Base Damage</th>
-                                    <th>Primary</th>
-                                    <th>Chainsaw Altfire</th>
-                                    <th>Stab</th>
-                                    <th>Full Damage w/ All Pellets</th>
-                                </tr>
-                            </thead>
-                                <tr>
-                                    <td>Eviscerator</td>
-                                    <td>485/29/90</td>
-                                    <td><span class="evis1"></span></td>
-                                    <td><span class="evis2"></span></td>
-                                    <td><span class="evis3"></span></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                        <p>Click the button for information on how damage was calculated <button class="btn"type="button" id ="moreInfoButton">Info</button></p>
-
-                       <div class = "moreInfoDiv">
-                        <p>All damage numbers for melee weapons are taken at their highest values:</p>
-                        <blockquote>
-                        Damage dealt by melee weapons depend on attack direction and how well melee tracer was connected with ZEDs body - vertical strikes do more damage while horizontal strikes do less damage but have better AOE. Pure left or right (non-diagonal) strikes do never more than 75% and never less than 50% of the base weapon damage at a distance of player's viewport. Stab attacks are always doing full damage due to tracer nature.     
-                        <footer>Killing Floor 2 Stats Spreadsheet</footer>
-                        </blockquote> 
-                       <p> See the <a href="https://docs.google.com/spreadsheets/d/1GDpg2mN1l_86U_RaDug0glFx8cZCuErwxZLiBKl9SyY/edit#gid=2068776317">spreadsheet</a> for more details</p>
-                       </div>
-                    <h2 class="sub-header">ZEDS</h2>
-                    <div class="table-responsive">
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                    <th>ZED</th>
-                                    <th>Health</th>
-                                    <th>Head Health</th>
-                                    <th>Body Shots to Kill</th>
-                                    <th>Head Shots to Decap</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Cyst</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Alpha Clot</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Slasher</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Bloat</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Crawler</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Gorefast</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Stalker</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Husk</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Siren</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Scrake</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Fleshpound</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                    <div class="col-xs-6 col-sm-2 col-lg-1 pull-right"> <label><input type="checkbox" id="chkmass" value="" >Massacre</label>
                 </div>
             </div>
         </div>
+        <h3 class="sub-header">Melee Weapons</h3>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Weapon Name</th>
+                        <th>Base Damages for Light/Heavy/Alternative Swings</th>
+                        <th>Light Attack w/ perks</th>
+                        <th>Heavy Attack w/ perks</th>
+                        <th>Alt Attack w/ perks</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Crovel Survival Tool</td>
+                        <td>49/86/15</td>
+                        <td><span class="cst1"></span></td>
+                        <td><span class="cst2"></span></td>
+                        <td><span class="cst3"></span> Bash Attack</td>
+                    </tr>
+                    <tr>
+                        <td>Katana</td>
+                        <td>68/90/68</td>
+                        <td><span class ="kat1"></span></td>
+                        <td><span class ="kat2"></span></td>
+                        <td><span class ="kat3"></span> Stab Attack</td>
+                    </tr>
+                    <tr>
+                        <td>Pulverizer</td>
+                        <td>70/145/528</td>
+                        <td><span class="pulv1"></span></td>
+                        <td><span class="pulv2"></span></td>
+                        <td><span class="pulv3"></span> Heavy w/ explosive</td>
+                    </tr>
+                    <tr>
+                        <td>Bone Crusher</td>
+                        <td>63/165/175</td>
+                        <td><span class ="bc1"></span></td>
+                        <td><span class ="bc2"></span></td>
+                        <td><span class ="bc3"></span> Bash Attack</td>
+                    </tr>
+                    <tr>
+                        <td>Zweihander</td>
+                        <td>85/195/63</td>
+                        <td><span class="zwei1"></span></td>
+                        <td><span class="zwei2"></span></td>
+                        <td><span class="zwei3"></span> Stab Attack</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="sub-header">Projectile Weapons</h3>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Shotgun</th>
+                        <th>Base Damage</th>
+                        <th>Number of pellets</th>
+                        <th>Scaled Perk Damage</th>
+                        <th>Full Damage w/ All Pellets</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>VLAD-1000 Nailgun</td>
+                        <td>30</td>
+                        <td>7</td>
+                        <td><span class="ng1"></span></td>
+                        <td><span class="ng2"></span></td>
+                    </tr>
+                    <thead>
+                        <tr>
+                            <th>Sawblade Launcher</th>
+                            <th>Base Damage</th>
+                            <th>Primary</th>
+                            <th>Chainsaw Altfire</th>
+                            <th>Stab</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>Eviscerator</td>
+                        <td>485/29/90</td>
+                        <td><span class="evis1"></span></td>
+                        <td><span class="evis2"></span></td>
+                        <td><span class="evis3"></span></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-
-        <script src="scripts/main.js"></script>
-
-
-
-        <script src="scripts/berserker.js"/> </script>
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script>
-            window.jQuery || document.write('<script src=bootstrap/js/jquery.min.js><\/script>')
-        </script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-
-    </body>
-
+        <p>Click the button for information on how damage was calculated <button class="btn"type="button" id ="moreInfoButton">Info</button></p>
+        <div class = "moreInfoDiv">
+            <p>All damage numbers for melee weapons are taken at their highest values:</p>
+            <blockquote>
+                Damage dealt by melee weapons depend on attack direction and how well melee tracer was connected with ZEDs body - vertical strikes do more damage while horizontal strikes do less damage but have better AOE. Pure left or right (non-diagonal) strikes do never more than 75% and never less than 50% of the base weapon damage at a distance of player's viewport. Stab attacks are always doing full damage due to tracer nature.
+            <footer>Killing Floor 2 Stats Spreadsheet</footer>
+        </blockquote>
+        <p> See the <a href="https://docs.google.com/spreadsheets/d/1GDpg2mN1l_86U_RaDug0glFx8cZCuErwxZLiBKl9SyY/edit#gid=2068776317">spreadsheet</a> for more details</p>
+    </div>
+    <h2 class="sub-header">ZEDS</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ZED</th>
+                    <th>Health</th>
+                    <th>Head Health</th>
+                    <th>Body Shots to Kill</th>
+                    <th>Head Shots to Decap</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cyst</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Alpha Clot</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Slasher</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Bloat</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Crawler</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Gorefast</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Stalker</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Husk</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Siren</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Scrake</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Fleshpound</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<script src="scripts/main.js"></script>
+<script src="scripts/berserker.js"/> </script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src=bootstrap/js/jquery.min.js><\/script>')
+</script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/offcanvas.js"></script>
+</body>
 </html>

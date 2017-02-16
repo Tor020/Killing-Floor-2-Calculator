@@ -9,6 +9,7 @@ var pelletdb = 12;
 var pelletinc = 9;
 var pellethmt = 6;
 var salv = .30;
+var vlad = 30;
 
 
 var knifeli = 32;

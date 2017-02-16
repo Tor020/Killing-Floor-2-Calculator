@@ -14,7 +14,7 @@ var knifeli = 32;
 var knifehe = 64;
 var knifesta = 15;
 //perk 
-var hpr = .25;
+var hpr = .30;
 var clco = 1.10;
 //perk level
 var plvl = $("#perkLVL").val();
