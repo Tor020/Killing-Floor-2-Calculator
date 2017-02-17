@@ -18,6 +18,7 @@ var fragr = .30; //reduces damage done.
 
 
                     //On direct hits ballistic damage is always applied. 150 damage base 
+                    //hx25 base impact is 10 dmg
 var himpa = .20;    //direct hits damage to any area
 var apr = .50;    //direct hts to critical areas         
 

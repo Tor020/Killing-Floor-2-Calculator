@@ -56,7 +56,7 @@ $('#perkLVL').on('keyup keydown', function(e) {
     }
 });
 
-$("#perkLVL").on("click change blur focus", function() {
+$("#perkLVL, #chkHPR").on("click change blur focus", function() {
     if ($('#chkHPR').is(':checked')) {
         plvl = $("#perkLVL").val();
    
@@ -64,7 +64,6 @@ $("#perkLVL").on("click change blur focus", function() {
    
 
         calc1 = (varm + (hpr * varm) + (plvl * varm));
-
         calc2 = (ak47 + (hpr * ak47) + (plvl * ak47));
         calc3 = (scar + (hpr * scar) + (plvl * scar));
         calc1 = Math.ceil(calc1);
@@ -92,38 +91,3 @@ $("#perkLVL").on("click change blur focus", function() {
     }
 });
 
-
-$("#chkHPR").change(function() {
-    if ($('#chkHPR').is(':checked')) {
-        plvl = $("#perkLVL").val();
-        plvl = plvl * .01;
-
-        calc1 = (varm + (hpr * varm) + (plvl * varm));
-        calc2 = (ak47 + (hpr * ak47) + (plvl * ak47));
-        calc3 = (scar + (hpr * scar) + (plvl * scar));
-
-
-        calc1 = Math.ceil(calc1);
-        calc2 = Math.ceil(calc2);
-        calc3 = Math.ceil(calc3);
-
-        $(".res1").html(calc1);
-        $(".res2").html(calc2);
-        $(".res3").html(calc3);
-    } else {
-        plvl = $("#perkLVL").val();
-        plvl = plvl * .01;
-
-        calc1 = (varm + (plvl * varm));
-        calc2 = (ak47 + (plvl * ak47));
-        calc3 = (scar + (plvl * scar));
-
-        calc1 = Math.ceil(calc1);
-        calc2 = Math.ceil(calc2);
-        calc3 = Math.ceil(calc3);
-
-        $(".res1").html(calc1);
-        $(".res2").html(calc2);
-        $(".res3").html(calc3);
-    }
-});

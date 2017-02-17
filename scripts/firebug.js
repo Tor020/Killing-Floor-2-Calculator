@@ -1,11 +1,12 @@
 //ROUNDED for Berserker, Demolitionist, Firebug, SWAT 
 var caulk = 10;
-var flamef = 21;
+var flame = 21;
 var micro = 14;
 
 var incend = 27;
 var pelletinc = 9;
 
+var bringTH =.35;
 
 var knifeli = 32;
 var knifehe = 64;
@@ -18,20 +19,117 @@ $(function() {
         plvl = $("#perkLVL").val();
         plvl = plvl * .008;
 
-        calc1 = (varm + (plvl * varm));
-        calc2 = (ak47 + (plvl * ak47));
-        calc3 = (scar + (plvl * scar));
+        calc1 = (caulk + (plvl * caulk));
+        calc2 = (flame + (plvl * flame));
+        calc3 = (micro + (plvl * micro));
+        calc4 = (incend + (plvl * incend));
 
         calc1 = Math.round(calc1);
         calc2 = Math.round(calc2);
         calc3 = Math.round(calc3);
+        calc4 = Math.round(calc4);
+        calc5 = calc4 * pelletinc;
 
-        $(".res1").html(calc1);
-        $(".res2").html(calc2);
-        $(".res3").html(calc3);
+        calc1a = (calc1 *.08);
+        calc2a = (calc2 *.08);
+        calc3a = (calc3 *.08);        
+        calc4a = (calc4 *.07);
+
+
+        calc1a = Math.round(calc1a);
+        calc2a = Math.round(calc2a);
+        calc3a = Math.round(calc3a);
+        calc4a = Math.round(calc4a);
+
+        $(".caulk").html(calc1);
+        $(".flame").html(calc2);
+        $(".micro").html(calc3);
+        $(".tg1").html(calc4);  
+        $(".tg2").html(calc5);
+        $(".caulkaft").html(calc1a);
+        $(".flameaft").html(calc2a);
+        $(".microaft").html(calc3a);
+        $(".tgaft").html(calc4a);
     }
 
 });
+
+$("#perkLVL, #bringTH").on("click change blur focus", function() {
+    if ($('#bringTH').is(':checked')) {
+        plvl = $("#perkLVL").val();
+        plvl = plvl * .008;
+   
+
+        calc1 = (caulk + (plvl * caulk) + (bringTH * caulk));
+        calc2 = (flame + (plvl * flame) + (bringTH * flame));
+        calc3 = (micro + (plvl * micro) + (bringTH * micro));
+        calc4 = (incend + (plvl * incend) + (bringTH * incend));
+
+        calc1 = Math.round(calc1);
+        calc2 = Math.round(calc2);
+        calc3 = Math.round(calc3);
+        calc4 = Math.round(calc4);
+        calc5 = calc4 * pelletinc;
+
+        calc1a = (calc1 *.08);
+        calc2a = (calc2 *.08);
+        calc3a = (calc3 *.08);        
+        calc4a = (calc4 *.07);
+
+
+        calc1a = Math.round(calc1a);
+        calc2a = Math.round(calc2a);
+        calc3a = Math.round(calc3a);
+        calc4a = Math.round(calc4a);
+
+        $(".caulk").html(calc1);
+        $(".flame").html(calc2);
+        $(".micro").html(calc3);
+        $(".tg1").html(calc4);  
+        $(".tg2").html(calc5);
+        $(".caulkaft").html(calc1a);
+        $(".flameaft").html(calc2a);
+        $(".microaft").html(calc3a);
+        $(".tgaft").html(calc4a);
+
+    } else {
+        plvl = $("#perkLVL").val();
+        plvl = plvl * .008;
+
+        calc1 = (caulk + (plvl * caulk));
+        calc2 = (flame + (plvl * flame));
+        calc3 = (micro + (plvl * micro));
+        calc4 = (incend + (plvl * incend));
+
+        calc1 = Math.round(calc1);
+        calc2 = Math.round(calc2);
+        calc3 = Math.round(calc3);
+        calc4 = Math.round(calc4);
+        calc5 = calc4 * pelletinc;
+
+        calc1a = (calc1 *.08);
+        calc2a = (calc2 *.08);
+        calc3a = (calc3 *.08);        
+        calc4a = (calc4 *.07);
+
+
+        calc1a = Math.round(calc1a);
+        calc2a = Math.round(calc2a);
+        calc3a = Math.round(calc3a);
+        calc4a = Math.round(calc4a);
+
+        $(".caulk").html(calc1);
+        $(".flame").html(calc2);
+        $(".micro").html(calc3);
+        $(".tg1").html(calc4);  
+        $(".tg2").html(calc5);
+        $(".caulkaft").html(calc1a);
+        $(".flameaft").html(calc2a);
+        $(".microaft").html(calc3a);
+        $(".tgaft").html(calc4a);
+    }
+});
+
 
 //this function prevents inputs more than 25
 $('#perkLVL').on('keyup keydown', function(e) {
@@ -44,3 +142,5 @@ $('#perkLVL').on('keyup keydown', function(e) {
         $(this).val(25);
     }
 });
+
+

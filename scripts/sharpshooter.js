@@ -128,8 +128,8 @@ if  ($('#sniper').is(':checked') && $('#stability').is(':checked') && $('#rackem
       
 
         $(".1858").html(calc1);
-        $(".rail").html(calc2);
-        $(".m14").html(calc3);
+        $(".m14").html(calc2);
+        $(".rail").html(calc3);
         $(".mag500").html(calc4);
         $(".winc").html(calc5);
         $(".xbow").html(calc6);
@@ -300,8 +300,8 @@ if  ($('#sniper').is(':checked') && $('#stability').is(':checked') && $('#rackem
         $("#rackem").hide();
 
         calc1 = rev18;
-        calc2 = rail;
-        calc3 = m14;
+        calc2 = m14;
+        calc3 = rail;
         calc4 = mag500;
         calc5 = winch;
         calc6 = xbow;

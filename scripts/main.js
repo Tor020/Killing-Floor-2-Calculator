@@ -1,8 +1,24 @@
+    $(function() {
+{
 
+    $(".moreInfoDiv2").hide();
+    $(".moreInfoDiv").hide();
+    }
+});
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
+
+
+$('.moreInfoButton').click(function(){
+
+    $(".moreInfoDiv").toggle();
+
+});
+
+
+
 
 /*
 var plvl = $("#perkLVL").val();

@@ -3,7 +3,7 @@
 //finish massacre
 var plvl = $("#perkLVL").val();
 
-var butch = .25;
+var butch = .20;
 var parry = .35;
 var smash = .50;
 //rmb head
@@ -44,7 +44,7 @@ var vlad = 30;
 $(function() {
     {
 
-        $(".moreInfoDiv").hide();
+    
         plvl = $("#perkLVL").val();
         plvl = plvl * .01;
 
@@ -111,14 +111,6 @@ $(function() {
 });
 
 
-$('#moreInfoButton').click(function(){
-
-    $(".moreInfoDiv").toggle();
-
-});
-
-
-
 //this function prevents inputs more than 25
 $('#perkLVL').on('keyup keydown', function(e) {
     console.log($(this).val() > 25)
@@ -149,7 +141,7 @@ $("#perkLVL, #chkbutch, #chksmash, #chkmass").on("click change blur focus", func
         zweic2 = zweh + (plvl * zweh) + (butch * zweh) + (smash * zweh);
         zweic3 = zwem + (plvl * zwem) + (butch * zwem);
         evi1c = evil + (plvl * evil) + (butch * evil);
-        evihc = evih + (plvl * evih) + (butch * evih) + (smash * evih);
+        evihc = evih + (plvl * evih) + (butch * evih);
         evimc = evim + (plvl * evim) + (butch * evim);
         bclc = bcl + (plvl * bcl) + (butch * bcl);
         bchc = bch + (plvl * bch) + (butch * bch) + (smash * bch);
@@ -168,8 +160,8 @@ $("#perkLVL, #chkbutch, #chksmash, #chkmass").on("click change blur focus", func
         zweic2 = Math.round(zweic2);
         zweic3 = Math.round(zweic3);
         evi1c = Math.round(evi1c);
-        evihc = Math.round(evih);
-        evimc = Math.round(evim);
+        evihc = Math.round(evihc);
+        evimc = Math.round(evimc);
         bclc = Math.round(bclc);
         bchc = Math.round(bchc);
         bcmc = Math.round(bcmc);
@@ -219,7 +211,9 @@ $("#perkLVL, #chkbutch, #chksmash, #chkmass").on("click change blur focus", func
         bchc = bch + (plvl * bch) + (butch * bch);
         bcmc = bcm + (plvl * bcm) + (butch * bcm);
         vladc  = vlad + (plvl * vlad) + (butch * vlad);
-
+        console.log(evi1c);
+        console.log(evihc);
+        console.log(evimc);
         cstcalc1 = Math.round(cstcalc1);
         cstcalc2 = Math.round(cstcalc2);
         cstcalc3 = Math.round(cstcalc3);
@@ -232,8 +226,8 @@ $("#perkLVL, #chkbutch, #chksmash, #chkmass").on("click change blur focus", func
         zweic2 = Math.round(zweic2);
         zweic3 = Math.round(zweic3);
         evi1c = Math.round(evi1c);
-        evihc = Math.round(evih);
-        evimc = Math.round(evim);
+        evihc = Math.round(evihc);
+        evimc = Math.round(evimc);
         bclc = Math.round(bclc);
         bchc = Math.round(bchc);
         bcmc = Math.round(bcmc);
@@ -276,7 +270,7 @@ $("#perkLVL, #chkbutch, #chksmash, #chkmass").on("click change blur focus", func
         zweic1 = zwel + (plvl * zwel) + (butch * zwel) + (mass * zwel);
         zweic2 = zweh + (plvl * zweh) + (butch * zweh);
         zweic3 = zwem + (plvl * zwem) + (butch * zwem);
-        evi1c = evil + (plvl * evil) + (butch * evil) + (mass * evil);
+        evi1c = evil + (plvl * evil) + (butch * evil);
         evihc = evih + (plvl * evih) + (butch * evih);
         evimc = evim + (plvl * evim) + (butch * evim);
         bclc = bcl + (plvl * bcl) + (butch * bcl) + (mass * bcl);
@@ -296,8 +290,8 @@ $("#perkLVL, #chkbutch, #chksmash, #chkmass").on("click change blur focus", func
         zweic2 = Math.round(zweic2);
         zweic3 = Math.round(zweic3);
         evi1c = Math.round(evi1c);
-        evihc = Math.round(evih);
-        evimc = Math.round(evim);
+        evihc = Math.round(evihc);
+        evimc = Math.round(evimc);
         bclc = Math.round(bclc);
         bchc = Math.round(bchc);
         bcmc = Math.round(bcmc);
@@ -361,8 +355,8 @@ $("#perkLVL, #chkbutch, #chksmash, #chkmass").on("click change blur focus", func
         zweic2 = Math.round(zweic2);
         zweic3 = Math.round(zweic3);
         evi1c = Math.round(evi1c);
-        evihc = Math.round(evih);
-        evimc = Math.round(evim);
+        evihc = Math.round(evihc);
+        evimc = Math.round(evimc);
         bclc = Math.round(bclc);
         bchc = Math.round(bchc);
         bcmc = Math.round(bcmc);
@@ -406,8 +400,8 @@ $("#perkLVL, #chkbutch, #chksmash, #chkmass").on("click change blur focus", func
         zweic2 = zweh + (plvl * zweh) + (smash * zweh);
         zweic3 = zwem + (plvl * zwem); 
         evi1c = evil + (plvl * evil);
-        evihc = evih + (plvl * evih) + (smash * evih);
-        evihs = evih + (plvl * evih) + (smash * evih);
+        evihc = evih + (plvl * evih);
+        evihs = evih + (plvl * evih);
         evimc = evim + (plvl * evim);
         bclc = bcl + (plvl * bcl);
         bchc = bch + (plvl * bch) + (smash * bch);
@@ -426,8 +420,8 @@ $("#perkLVL, #chkbutch, #chksmash, #chkmass").on("click change blur focus", func
         zweic2 = Math.round(zweic2);
         zweic3 = Math.round(zweic3);
         evi1c = Math.round(evi1c);
-        evihc = Math.round(evih);
-        evimc = Math.round(evim);
+        evihc = Math.round(evihc);
+        evimc = Math.round(evimc);
         bclc = Math.round(bclc);
         bchc = Math.round(bchc);
         bcmc = Math.round(bcmc);
@@ -490,8 +484,8 @@ $("#perkLVL, #chkbutch, #chksmash, #chkmass").on("click change blur focus", func
         zweic2 = Math.round(zweic2);
         zweic3 = Math.round(zweic3);
         evi1c = Math.round(evi1c);
-        evihc = Math.round(evih);
-        evimc = Math.round(evim);
+        evihc = Math.round(evihc);
+        evimc = Math.round(evimc);
         bclc = Math.round(bclc);
         bchc = Math.round(bchc);
         bcmc = Math.round(bcmc);

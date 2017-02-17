@@ -28,9 +28,8 @@ $(function (){
 
 
 $("#chkBS").on("change click blur focus", function(){
-	console.log('called');
 if ($("#chkBS").is(":checked")){
-	console.log('called');
+
 
 	calc1 = pis + (bs*pis);
 	calc2 = smg + (bs*smg);
