@@ -103,59 +103,7 @@ var hmt201  = 20;
 //surv
 var meleeXP = .10;
 
-$('.btnBerserk').click(function(){
 
-    $(".Berserker").toggle();
-
-});
-
-$('.btnCommando').click(function(){
-
-    $(".Commando").toggle();
-
-});
-
-$('.btnDemolitions').click(function(){
-
-    $(".Demolitions").toggle();
-
-});
-
-$('.btnField').click(function(){
-
-    $(".Field-Medic").toggle();
-
-});
-
-$('.btnFirebug').click(function(){
-
-    $(".Firebug").toggle();
-
-});
-
-$('.btnGunslinger').click(function(){
-
-    $(".Gunslinger").toggle();
-
-});
-
-$('.btnSharpshooter').click(function(){
-
-    $(".Sharpshooter").toggle();
-
-});
-
-$('.btnSupport').click(function(){
-
-    $(".Support").toggle();
-
-});
-
-$('.btnSwat').click(function(){
-
-    $(".Swat").toggle();
-
-});
 
 $(function() {
     {
