@@ -604,41 +604,138 @@
         </table>
     </div>
     </div>
-               </div> <!--Tab Content Div -->
-        </div><!--offset col  Div -->
-        
-            <label><input type = "button" class = "btn moreInfoButton" value = "More Info"></label>
-            <div class="moreInfoDiv">
-                <ul>
-                    <li>Firebug damage is rounded</li>
-                    <li>C&B flamethrower and microwavegun have a post-shooting life time where it does damage without consuming ammo (duration - 0.35s).</li>
-                        <li>Even if you tap fire C&B flamethrower and microwavegun, a minimum amount of ammo is concerned, but it is currently bugged, and may cause up to 9 hits PC v1.050</li>
-                        <li>Afterburn damage is dealt every 0.4s for 1.7s. There may be inconsistencies with the way damage occurs from Afterburn. Refer to the spreadsheet for specifics</li>
-                       <!--                         
-                       <li>Due to firebug's heavy DOT reliance and inconsistency, the ZED chart will only have the ZED health and weakness/resistance to firebug damages</li>
-                        <li></li>
-                        <li></li>
-                        <li></li> -->
-                    </ul>
-                </div>
+</div> <!--Tab Content Div -->
+    <br>
+    <br>
+        <div class="container-fluid">
+            <div class="row">
+                <fieldset>
+                    <legend>Difficulty</legend>
+                    <label class="radio-inline">
+                        <input type="radio" name="difficulty" id="normaldiff" value="Normal" checked class = "rButton"> Normal
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="difficulty" id="harddiff" value="Hard" class = "rButton"> Hard
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="difficulty" id="suicidaldiff" value="Suicidal" class = "rButton"> Suicidal
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="difficulty" id="HOEdiff" value="HOE" class = "rButton"> HOE
+                    </label>
+                </fieldset>
+            </div>
+            
+            <div class="row">
+                <fieldset>
+                    <legend>Choose Number of players</legend>
+                    <label class="radio-inline">
+                        <input type="radio" name="numberofplayers" id="1play" value="1play" checked class = "rButton"> 1
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="numberofplayers" id="2play" value="2play" class = "rButton"> 2
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="numberofplayers" id="3play" value="3play" class = "rButton"> 3
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="numberofplayers" id="4play" value="4play" class = "rButton"> 4
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="numberofplayers" id="5play" value="5play" class = "rButton"> 5
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="numberofplayers" id="6play" value="6play" class = "rButton"> 6
+                    </label>
+                </fieldset>
+            </div>
+        </div>
 
+        <h3 class="sub-header">ZEDS</h3>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ZED</th>
+                        <th>Health</th>
+                        <th>Head Health</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cyst</td>
+                        <td><span class = "cysthp"></span></td>
+                        <td><span class = "cystHhp"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Alpha Clot</td>
+                        <td><span class = "alphahp"></span></td>
+                        <td><span class = "alphaHhp"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Slasher</td>
+                        <td><span class = "slasherhp"></span></td>
+                        <td><span class = "slasherHhp"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Bloat</td>
+                        <td><span class = "bloathp"></span></td>
+                        <td><span class = "bloatHhp"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Crawler</td>
+                        <td><span class = "crawlerhp"></span></td>
+                        <td><span class = "crawlerHhp"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Gorefast</td>
+                        <td><span class = "gorefasthp"></span></td>
+                        <td><span class = "gorefastHhp"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Gorefiend</td>
+                        <td><span class = "gorefiendhp"></span></td>
+                        <td><span class = "gorefiendHhp"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Stalker</td>
+                        <td><span class = "stalkerhp"></span></td>
+                        <td><span class = "stalkerHhp"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Husk</td>
+                        <td><span class = "huskhp"></span></td>
+                        <td><span class = "huskHhp"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Siren</td>
+                        <td><span class = "sirenhp"></span></td>
+                        <td><span class = "sirenHhp"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Scrake</td>
+                        <td><span class = "scrakehp"></span></td>
+                        <td><span class = "scrakeHhp"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Fleshpound</td>
+                        <td><span class = "fleshpoundhp"></span></td>
+                        <td><span class = "fleshpoundHhp"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div><!--offset col  Div -->
 
+<script src ="scripts/main.js"></script>
+<script src ="scripts/survivalist.js"></script>
+<script src="scripts/zedhp.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src=bootstrap/js/jquery.min.js><\/script>')</script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/offcanvas.js"></script>
 
-
-
- 
-       
-    
-   
-   
-    
-    <script src = "scripts/main.js"> </script>
-    <script src = "scripts/survivalist.js"></script
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src=bootstrap/js/jquery.min.js><\/script>')</script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="bootstrap/js/offcanvas.js"></script>
 </body>
 </html>

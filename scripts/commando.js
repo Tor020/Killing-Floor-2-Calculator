@@ -25,7 +25,9 @@ var calc3 = 0;
 
 // Shorthand for $( document ).ready()
 $(function() {
-    {
+
+
+
         plvl = $("#perkLVL").val();
         plvl = plvl * .01;
 
@@ -40,7 +42,7 @@ $(function() {
         $(".res1").html(calc1);
         $(".res2").html(calc2);
         $(".res3").html(calc3);
-    }
+    
 
 });
 
