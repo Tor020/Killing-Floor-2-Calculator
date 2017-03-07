@@ -29,15 +29,13 @@
 
 .btn:focus,.btn:active {
    outline: none !important;}
-   /*
 
-}
-html, body {
-   height: 100%;
+.center{
+  margin: auto;
 }
 
 
-
+/*
 Custom CSS rules for the sidebar 
 See dashboard.css for other rules 
 @media (max-width: 767px) {
