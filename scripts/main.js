@@ -1,15 +1,13 @@
 
-
 $( document ).ready(function() 
         {
-
-            $(".moreinfdiv").hide();
+    $(".moreInfoDivClass").hide();
+    $(".moreInfoDivClass").toggle();
         });
 
   $('.moreInfoButtonClass').click(function()
 
   {
     $(".moreInfoDivClass").toggle();
-}
-  );
+});
 
