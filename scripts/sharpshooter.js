@@ -1037,7 +1037,7 @@ else if ($('#rackemchk').is(':checked') && $("#deadeye").is(":checked"))
  else
 {
         plvl = $("#perkLVL").val();
-        plvl = plvl * .01;;
+        plvl = plvl * .01;
         $("#rackem").hide();
 
         //Base Damage
@@ -1059,13 +1059,13 @@ else if ($('#rackemchk').is(':checked') && $("#deadeye").is(":checked"))
         calc7h = _9mm + (_9mm * plvl);
 
         //Base Damage
-        calc1h = Math.ceil(calc1);
-        calc2h = Math.ceil(calc2);
-        calc3h = Math.ceil(calc3);
-        calc4h = Math.ceil(calc4);
-        calc5h = Math.ceil(calc5);
-        calc6h = Math.ceil(calc6);
-        calc7h = Math.ceil(calc7);        
+        calc1 = Math.ceil(calc1);
+        calc2 = Math.ceil(calc2);
+        calc3 = Math.ceil(calc3);
+        calc4 = Math.ceil(calc4);
+        calc5 = Math.ceil(calc5);
+        calc6 = Math.ceil(calc6);
+        calc7 = Math.ceil(calc7);        
 
         //Head
         calc1h = Math.ceil(calc1h);
