@@ -1,20 +1,15 @@
 
 
 $( document ).ready(function() 
-
         {
 
-            $(".moreInfoDivClass").hide();
-            $(".moreInfoDivZED").hide();
-
+            $(".moreinfdiv").hide();
         });
 
   $('.moreInfoButtonClass').click(function()
 
   {
-
     $(".moreInfoDivClass").toggle();
-
 }
   );
 
