@@ -4,36 +4,17 @@ $( document ).ready(function()
 
         {
 
-            $(".moreInfoDiv2").hide();
-            $(".moreInfoDiv").hide();
+            $(".moreInfoDivClass").hide();
+            $(".moreInfoDivZED").hide();
 
-
-            /*
-
-            Table sorter plugin
-
-            */
-
-            
         });
 
-
-
-
-  $("#menu-toggle").click(function(e)
-   {
-
-    e.preventDefault();
-    $("#wrapper").toggleClass("toggled");
-            
-   });
-
-
-  $('.moreInfoButton').click(function()
+  $('.moreInfoButtonClass').click(function()
 
   {
 
-    $(".moreInfoDiv").toggle();
+    $(".moreInfoDivClass").toggle();
 
-  });
+}
+  );
 

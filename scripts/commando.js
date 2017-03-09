@@ -10,6 +10,7 @@ var varm = 30;
 var ak47 = 40;
 var scar = 50;
 
+var _9mm = 15;
 var knifeli = 32;
 var knifehe = 64;
 var knifesta = 15;
@@ -18,15 +19,9 @@ var hpr = .30;
 var clco = 1.10;
 //perk level
 var plvl = $("#perkLVL").val();
-//variable initializations for calculations
-var calc1 = 0;
-var calc2 = 0;
-var calc3 = 0;
 
 // Shorthand for $( document ).ready()
 $(function() {
-
-
 
         plvl = $("#perkLVL").val();
         plvl = plvl * .01;
@@ -42,13 +37,10 @@ $(function() {
         $(".res1").html(calc1);
         $(".res2").html(calc2);
         $(".res3").html(calc3);
-    
 
 });
 
-//this function prevents inputs more than 25
 $('#perkLVL').on('keyup keydown', function(e) {
-    console.log($(this).val() > 25)
     if
     //e.keyCode != 46 aka delete
     //e.keyCode != 8 aka backspace
@@ -61,9 +53,7 @@ $('#perkLVL').on('keyup keydown', function(e) {
 $("#perkLVL, #chkHPR").on("click change blur focus", function() {
     if ($('#chkHPR').is(':checked')) {
         plvl = $("#perkLVL").val();
-   
         plvl = plvl * .01;
-   
 
         calc1 = (varm + (hpr * varm) + (plvl * varm));
         calc2 = (ak47 + (hpr * ak47) + (plvl * ak47));
@@ -75,7 +65,9 @@ $("#perkLVL, #chkHPR").on("click change blur focus", function() {
         $(".res1").html(calc1);
         $(".res2").html(calc2);
         $(".res3").html(calc3);
-    } else {
+    }
+     else
+    {
         plvl = $("#perkLVL").val();
         plvl = plvl * .01;
 

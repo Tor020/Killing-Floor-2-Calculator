@@ -55,17 +55,36 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2  main">
-            <div class="container-fluid">
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2  main">
+        <div class="container-fluid">
                 <h3 class="sub-header">Set Perk Level and Skill Choices</h3>
-                <div class="row">
-                    <div class="col-xs-6 col-sm-3 col-lg-2">
-                        <label>Perk Level <input type="number" class="equipCatValidation" id="perkLVL" name="perklevel" min="1" max="25" value="1"></label>
-                    </div>
-                    <div class="col-xs-6 col-sm-3 col-lg-2" <div class="checkbox"> <label><input type="checkbox" id="chkHPR" value="">Hollow Point Rounds</label>
+
+            <div class="row">
+
+                <div class="col-xs-6 col-sm-3 col-lg-2">
+
+                <label>Perk Level <input type="number" class="equipCatValidation" id="perkLVL" name="perklevel" min="1" max="25" value="1"></label>
+
                 </div>
+
+                <div class="col-xs-6 col-sm-3 col-lg-2"> 
+
+                <label><input type="checkbox" id="chkHPR" value="">Hollow Point Rounds</label>
+
+                </div>
+
+          <!--
+                <div class="col-xs-6 col-sm-3 col-lg-2">
+
+                <label><input type="checkbox" id="fallback" value="">Fallback</label>
+
+                </div>
+             -->
+
             </div>
+
         </div>
+
         <h3 class="sub-header">Projectile Weapons</h3>
         <div class="table-responsive">
             <table class="table table-striped">
@@ -73,63 +92,78 @@
                     <tr>
                         <th>Gun</th>
                         <th>Base Damage</th>
-                        <th></th>
-                        <th></th>
                         <th>Total Damage with Perks Applied</th>
                     </tr>
                 </thead>
                 <tbody>
+ <!--        
+                    <tr>
+                        <td>9mm Handgun</td>
+                        <td>15</td>
+                        <td><span class="9mm">15</span></td>
+                    </tr> 
+    -->
                     <tr>
                         <td>AR-15 Varmint Rifle</td>
                         <td>30</td>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <span class="res1"></span>
-                        </td>
+                        <td><span class="res1"></span></td>
                     </tr>
                     <tr>
                         <td>SA80 L85A2 Bullpup</td>
                         <td>30</td>
-                        <td></td>
-                        <td></td>
                         <td><span class="res1"></span></td>
                     </tr>
                     <tr>
                         <td>M16 M203 Assault Rifle</td>
                         <td>30</td>
-                        <td></td>
-                        <td></td>
                         <td><span class="res1"></span></td>
                     </tr>
                     <tr>
                         <td>Kalashnikov AK-12</td>
                         <td>40</td>
-                        <td></td>
-                        <td></td>
                         <td><span class="res2"></span></td>
                     </tr>
                     <tr>
                         <td>HMTech-401 Assault Rifle</td>
                         <td>40</td>
-                        <td></td>
-                        <td></td>
                         <td><span class="res2"></span></td>
                     </tr>
                     <tr>
                         <td>SCAR-H Assault Rifle</td>
                         <td>50</td>
-                        <td></td>
-                        <td></td>
                         <td><span class="res3"></span></td>
                     </tr>
                 </tbody>
             </table>
-        </div>
-        <input type = "button" class = "btn moreInfoButton" value = "More Info">
-        <div class="moreInfoDiv">
+<!--
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Weapon Name</th>
+                        <th>Base Damages for Light/Heavy/Alt Swings</th>
+                        <th>Light Attack w/ perks</th>
+                        <th>Heavy Attack w/ perks</th>
+                        <th>Alt Attack w/ perks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Knife</td>
+                        <td>32/64/15</td>
+                        <td><span class="knife1">32</span></td>
+                        <td><span class="knife2">64</span></td>
+                        <td><span class="knife2">15</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> -->
+
+
+        <input type = "button" class = "btn moreInfoButtonClass" value = "More Info">
+        <div class="moreInfoDivClass">
             <ul>
                 <li>Commando damage is rounded up</li>
+                <li>Amount of the damage per horizontal strike depend on the player-to-ZED angle. Horizontal strikes do no more than 75% and no less than 50% of the base damage value.</li>
             </ul>
         </div>
         

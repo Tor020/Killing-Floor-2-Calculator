@@ -53,23 +53,54 @@
                         <li><a href="swat.html">SWAT</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
                     
-                    <div class="container-fluid">
-                        <h3 class="sub-header">Set Skill Choices</h3>
-                        <div class="row">
-                            <!-- Removed until head shot damage needs to be added for ZED kills
-                            <div class="col-xs-6 col-sm-3">
-                                <label>Perk Level <input type="number" class="equipCatValidation" id="perkLVL" name="perklevel" min="1" max="25" value="1"></label>
-                            </div>  )  -->
-                            <div class="col-xs-6 col-sm-2 col-lg-1">  <label><input type="checkbox" id="sniper" value="" >Sniper</label>
-                        </div>
-                        <div class="col-xs-6 col-sm-2 col-lg-1"> <label><input type="checkbox" id="stability" value="" >Stability</label>
-                    </div>
-                    <div class="col-xs-6 col-sm-2 col-lg-1"> <label> <input type="checkbox" id="rackemchk" value=""><input type="number" id="rackem" min="1" max="5" value="1">Rack em Up </label>
-                </div>
-            </div>
+        <div class="container-fluid">
+
+        <h3 class="sub-header">Set Skill Choices</h3>
+
+        <div class="row">
+            
+            <div class="col-xs-6 col-sm-3">
+
+            <label>Perk Level <input type="number" class="equipCatValidation" id="perkLVL" name="perklevel" min="1" max="25" value="1"></label>
+
+            </div>  
+
         </div>
+
+        <div class="row">
+
+            <div class="col-xs-6 col-sm-2 col-lg-1">
+
+            <label><input type="checkbox" id="sniper" value="" >Sniper</label>
+
+            </div>
+
+            <div class="col-xs-6 col-sm-2 col-lg-1">
+
+            <label><input type="checkbox" id="stability" value="" >Stability</label>
+
+            </div>
+
+            <div class="col-xs-6 col-sm-2 col-lg-1">
+
+            <label><input type="checkbox" id="rackemchk" value=""><input type="number" id="rackem" min="1" max="5" value="1">Rack em Up </label>
+
+            </div>
+
+            <div class="col-xs-6 col-sm-2 col-lg-1">
+
+            <label><input type="checkbox" id="deadeye" value="" >Deadeye</label>
+
+            </div>
+
+        </div>
+
+    </div>
+
         <h3 class="sub-header">Damage Calculation</h3>
         <div class="table-responsive">
             <table class="table table-striped">
@@ -77,65 +108,77 @@
                     <tr>
                         <th>Gun</th>
                         <th>Base Damage</th>
-                        <th></th>
-                        <th></th>
-                        <th>Total Damage with Perks Applied</th>
+                        <th>Damage with perks Applied</th>
+                        <th>Headshot Damage with perks Applied</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
+                        <td>9mm Handgun</td>
+                        <td>15</td>
+                        <td><span class="9mm"></span></td>
+                        <td><span class="9mmH"></span></td>
+                    </tr>
+                    <tr>
                         <td>1858 Revolver</td>
                         <td>30</td>
-                        <td></td>
-                        <td></td>
                         <td><span class="1858"></span></td>
+                        <td><span class="1858H"></span></td>
                     </tr>
                     <tr>
                         <td>Winchester 1894 </td>
                         <td>80</td>
-                        <td></td>
-                        <td></td>
                         <td><span class="winc"></span></td>
+                        <td><span class="wincH"></span></td>
                     </tr>
                     <tr>
                         <td>M14 EBR </td>
                         <td>90</td>
-                        <td></td>
-                        <td></td>
                         <td><span class="m14"></span></td>
+                        <td><span class="m14H"></span></td>
                     </tr>
                     <tr>
                         <td>500 Magnum Revolver</td>
                         <td>150</td>
-                        <td></td>
-                        <td></td>
                         <td><span class="mag500"></span></td>
+                        <td><span class="mag500H"></span></td>
                     </tr>
                     <tr>
                         <td>Crossbow</td>
                         <td>350</td>
-                        <td></td>
-                        <td></td>
                         <td><span class="xbow"></span></td>
+                        <td><span class="xbowH"></span></td>
                     </tr>
                     <tr>
                         <td>Rail Gun </td>
                         <td>750</td>
-                        <td></td>
-                        <td></td>
                         <td><span class="rail"></span></td>
+                        <td><span class="railH"></span></td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
-        <input type="button" class="btn moreInfoButton" value = "More Info">
-                <div class = "moreInfoDiv">
+        <input type="button" class="btn moreInfoButtonClass" value = "More Info">
+                <div class = "moreInfoDivClass">
                 <ul>
                 <li>Sharpshooter's damage is rounded up.</li>
-                </ul>
-            </div>
+               <!-- <li>ZEDS have different resistances/weakpoints </li>
+                <li> These are relevant damage types of the weapons <br>
+                   <span class = "small col-md-offset-2"> Ballistic_9mm <br>   </span>
+                   <span class = "small col-md-offset-2"> Ballistic_M12EBR  <br>  </span>
+                   <span class = "small col-md-offset-2"> Ballistic_RailGun  <br> </span>
+                   <span class = "small col-md-offset-2"> Ballistic_Rem1858  <br> </span>
+                   <span class = "small col-md-offset-2"> Ballistic_SW500 <br> </span>
+                   <span class = "small col-md-offset-2"> Ballistic_Winchester <br> </span> 
+                   <span class = "small col-md-offset-2"> Piercing_Crossbow </span>
+                </li>
                 <br>
+                <span class = "small col-md-offset-3"> To see ZED resistances click on the more info box below the ZED hp table</span>
+                <span class = "small col-md-offset-3"> Specific ZED vulnerabilities and resistances pertain to the exact damage type</span>
+                </ul> -->
+            </div>
+    <br>
     <br>
         <div class="container-fluid">
             <div class="row">
@@ -255,6 +298,7 @@
             </table>
         </div>
     </div>
+</div>
 
 <script src="scripts/main.js"></script>
 <script src="scripts/sharpshooter.js"></script>

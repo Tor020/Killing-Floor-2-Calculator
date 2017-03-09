@@ -9,6 +9,7 @@ var rack = 0;
 
 
 //base damage of each of the core guns
+var _9mm = 15;
 var rev18 = 30;
 var m1911 = 50;
 var deagle = 91;
@@ -22,6 +23,7 @@ var knifehe = 64;
 var knifesta = 15;
 $(function() {
     {
+
     	$("#rackem").hide();
         plvl = $("#perkLVL").val();
         plvl = plvl * .01;
@@ -33,6 +35,7 @@ $(function() {
         calc5 = winch + (plvl * winch);
         calc6 = hmtp + (plvl * hmtp);
         calc7 = grenp + (plvl * grenp);
+        calc8 = _9mm + (plvl * _9mm);
 
         calc1 = Math.ceil(calc1);
         calc2 = Math.ceil(calc2);
@@ -41,6 +44,7 @@ $(function() {
         calc5 = Math.ceil(calc5);
         calc6 = Math.ceil(calc6);
         calc7 = Math.ceil(calc7);
+        calc8 = Math.ceil(calc8);
 
         $(".rev1858").html(calc1);
         $(".m19").html(calc2);
@@ -52,6 +56,8 @@ $(function() {
 
         calc7 = (calc7 * 7);
         $(".hx25a").html(calc7)
+
+        $(".9mm").html(calc8);
 
 
     }
@@ -81,16 +87,10 @@ $('#rackem').on('keyup keydown', function(e) {
     }
 });
 
-
-
-
-
-
 $("#perkLVL, #chkBone, #rackemchk, #rackem").on("click change blur focus", function() {
     if ($('#chkBone').is(':checked')) {	
         plvl = $("#perkLVL").val();
         plvl = plvl * .01;
-      
 
         calc1 = rev18 + (plvl * rev18) + (rev18 * boneB);
         calc2 = m1911 + (plvl * m1911) + (m1911 * boneB);
@@ -99,6 +99,7 @@ $("#perkLVL, #chkBone, #rackemchk, #rackem").on("click change blur focus", funct
         calc5 = winch + (plvl * winch) + (winch * boneB);
         calc6 = hmtp + (plvl * hmtp) + (hmtp * boneB);
         calc7 = grenp + (plvl * grenp) + (grenp * boneB);
+        calc8 = _9mm + (plvl * _9mm) + (_9mm * boneB);
 
         calc1 = Math.ceil(calc1);
         calc2 = Math.ceil(calc2);
@@ -107,6 +108,7 @@ $("#perkLVL, #chkBone, #rackemchk, #rackem").on("click change blur focus", funct
         calc5 = Math.ceil(calc5);
         calc6 = Math.ceil(calc6);
         calc7 = Math.ceil(calc7);
+        calc8 = Math.ceil(calc8);
 
         $(".rev1858").html(calc1);
         $(".m19").html(calc2);
@@ -117,26 +119,20 @@ $("#perkLVL, #chkBone, #rackemchk, #rackem").on("click change blur focus", funct
         $(".hx25").html(calc7);
 
         calc7 = (calc7 * 7);
-        $(".hx25a").html(calc7);
+        $(".hx25a").html(calc7)
+
+        $(".9mm").html(calc8);
 
     } 
 
-
-
-
-
     else if ($('#rackemchk').is(':checked')) {
-    	
-
 
         plvl = $("#perkLVL").val();
         plvl = plvl * .01;
+
         rack = $("#rackem").val();
         rack = rack * .1;
         $('#rackem').show();
-
-        
-
 
         calc1 = rev18 + (plvl * rev18) + (rack * rev18);
         calc2 = m1911 + (plvl * m1911) + (rack * m1911);
@@ -145,6 +141,7 @@ $("#perkLVL, #chkBone, #rackemchk, #rackem").on("click change blur focus", funct
         calc5 = winch + (plvl * winch) + (rack * winch);
         calc6 = hmtp + (plvl * hmtp) + (rack * hmtp);
         calc7 = grenp + (plvl * grenp) + (rack * grenp);
+        calc8 = _9mm + (plvl * _9mm) + (rack * _9mm);
 
         calc1 = Math.ceil(calc1);
         calc2 = Math.ceil(calc2);
@@ -153,6 +150,7 @@ $("#perkLVL, #chkBone, #rackemchk, #rackem").on("click change blur focus", funct
         calc5 = Math.ceil(calc5);
         calc6 = Math.ceil(calc6);
         calc7 = Math.ceil(calc7);
+        calc8 = Math.ceil(calc8);
 
         $(".rev1858").html(calc1);
         $(".m19").html(calc2);
@@ -163,15 +161,13 @@ $("#perkLVL, #chkBone, #rackemchk, #rackem").on("click change blur focus", funct
         $(".hx25").html(calc7);
 
         calc7 = (calc7 * 7);
-        $(".hx25a").html(calc7);
+        $(".hx25a").html(calc7)
+
+        $(".9mm").html(calc8);
 
     }
 
-
-
     else
-
-
 
      {
         plvl = $("#perkLVL").val();
@@ -185,6 +181,7 @@ $("#perkLVL, #chkBone, #rackemchk, #rackem").on("click change blur focus", funct
         calc5 = winch + (plvl * winch);
         calc6 = hmtp + (plvl * hmtp);
         calc7 = grenp + (plvl * grenp);
+        calc8 = _9mm + (plvl * _9mm);
 
         calc1 = Math.ceil(calc1);
         calc2 = Math.ceil(calc2);
@@ -193,6 +190,7 @@ $("#perkLVL, #chkBone, #rackemchk, #rackem").on("click change blur focus", funct
         calc5 = Math.ceil(calc5);
         calc6 = Math.ceil(calc6);
         calc7 = Math.ceil(calc7);
+        calc8 = Math.ceil(calc8);
 
         $(".rev1858").html(calc1);
         $(".m19").html(calc2);
@@ -203,7 +201,9 @@ $("#perkLVL, #chkBone, #rackemchk, #rackem").on("click change blur focus", funct
         $(".hx25").html(calc7);
 
         calc7 = (calc7 * 7);
-        $(".hx25a").html(calc7);
+        $(".hx25a").html(calc7)
+
+        $(".9mm").html(calc8);
 
     }
 });
