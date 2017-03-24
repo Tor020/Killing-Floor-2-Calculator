@@ -8,6 +8,7 @@ ROUNDED or ROUNDED UP -
 //base damage of each of the core guns
 var varm = 30;
 var ak47 = 40;
+var LMG = 25;
 var scar = 50;
 
 var _9mm = 15;
@@ -29,14 +30,17 @@ $(function() {
         calc1 = (varm + (plvl * varm));
         calc2 = (ak47 + (plvl * ak47));
         calc3 = (scar + (plvl * scar));
+        calc4 = (LMG + (plvl * LMG));
 
         calc1 = Math.ceil(calc1);
         calc2 = Math.ceil(calc2);
         calc3 = Math.ceil(calc3);
+        calc4 = Math.ceil(calc4);
 
         $(".res1").html(calc1);
         $(".res2").html(calc2);
         $(".res3").html(calc3);
+        $(".LMG").html(calc4);
 
 });
 
@@ -58,13 +62,18 @@ $("#perkLVL, #chkHPR").on("click change blur focus", function() {
         calc1 = (varm + (hpr * varm) + (plvl * varm));
         calc2 = (ak47 + (hpr * ak47) + (plvl * ak47));
         calc3 = (scar + (hpr * scar) + (plvl * scar));
+        calc4 = (LMG + (hpr * LMG) + (plvl * LMG));
+
+
         calc1 = Math.ceil(calc1);
         calc2 = Math.ceil(calc2);
         calc3 = Math.ceil(calc3);
+        calc4 = Math.ceil(calc4);
 
         $(".res1").html(calc1);
         $(".res2").html(calc2);
         $(".res3").html(calc3);
+        $(".LMG").html(calc4);
     }
      else
     {
@@ -74,14 +83,17 @@ $("#perkLVL, #chkHPR").on("click change blur focus", function() {
         calc1 = (varm + (plvl * varm));
         calc2 = (ak47 + (plvl * ak47));
         calc3 = (scar + (plvl * scar));
+        calc4 = (LMG + (plvl * LMG));
 
         calc1 = Math.ceil(calc1);
         calc2 = Math.ceil(calc2);
         calc3 = Math.ceil(calc3);
+        calc4 = Math.ceil(calc4);
 
         $(".res1").html(calc1);
         $(".res2").html(calc2);
         $(".res3").html(calc3);
+        $(".LMG").html(calc4);
     }
 });
 

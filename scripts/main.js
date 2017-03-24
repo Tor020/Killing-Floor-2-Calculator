@@ -1,12 +1,20 @@
 
 $( document ).ready(function() 
-        {
+    {
 
-    $(".moreInfoDivClass").toggle();
-        });
+
+$(".moreInfoDivClass").toggle();
+    });
+
+
 
   $('.moreInfoButtonClass').click(function()
   {
     $(".moreInfoDivClass").toggle();
-});
+
+	});
+
+
+
+
 

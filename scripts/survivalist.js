@@ -30,6 +30,7 @@ var bcm = 175;
 
 //commando
 
+var LMG = 25;
 var varm = 30;
 var ak47 = 40;
 var scar = 50;
@@ -51,6 +52,7 @@ var hmAR = 40;
 
 //firebug
 
+var spitfire = 40;
 var caulk = 10;
 var flame = 21;
 var micro = 14;
@@ -177,14 +179,17 @@ $(function() {
         varmcalc1 = (varm + (plvl * varm));
         akcalc2 = (ak47 + (plvl * ak47));
         scarcalc3 = (scar + (plvl * scar));
+        LMGcalc4 = (LMG + (plvl * LMG));
 
         varmcalc1 = Math.round(varmcalc1);
         akcalc2 = Math.round(akcalc2);
         scarcalc3 = Math.round(scarcalc3);
+        LMGcalc4 = Math.round(LMGcalc4);
 
         $(".res1").html(varmcalc1);
         $(".res2").html(akcalc2);
         $(".res3").html(scarcalc3);
+        $(".LMG").html(LMGcalc4)
 
         //demo
 
@@ -232,23 +237,27 @@ $(function() {
         flamecalc2 = (flame + (plvl * flame));
         microcalc3 = (micro + (plvl * micro));
         incendcalc4 = (incend + (plvl * incend));
+        spitfirecalc5 = (spitfire + (plvl * spitfire));
 
         caulkcalc1 = Math.round(caulkcalc1);
         flamecalc2 = Math.round(flamecalc2);
         microcalc3 = Math.round(microcalc3);
         incendcalc4 = Math.round(incendcalc4);
         tgcalc5 = incendcalc4 * pelletinc;
+        spitfirecalc5 = Math.round(spitfire);
 
         caulkcalc1a = (caulkcalc1 *.08);
         flamecalc2a = (flamecalc2 *.08);
         microcalc3a = (microcalc3 *.08);        
         incendcalc4a = (incendcalc4 *.07);
+        spitfirecalc5a = (spitfirecalc5 * .07)
 
 
         caulkcalc1a = Math.round(caulkcalc1a);
         flamecalc2a = Math.round(flamecalc2a);
         microcalc3a = Math.round(microcalc3a);
         incendcalc4a = Math.round(incendcalc4a);
+        spitfirecalc5a = Math.round(spitfirecalc5a)
 
         $(".caulk").html(caulkcalc1);
         $(".flame").html(flamecalc2);
@@ -259,6 +268,10 @@ $(function() {
         $(".flameaft").html(flamecalc2a);
         $(".microaft").html(microcalc3a);
         $(".tgaft").html(incendcalc4a);
+
+        $(".spit").html(spitfirecalc5);
+        $(".spitaft").html(spitfirecalc5a);
+
 
         //gunslinger
 
@@ -422,14 +435,17 @@ $("#perkLVL, #chkMelee").on("click change blur focus", function() {
         varmcalc1 = (varm + (plvl * varm));
         akcalc2 = (ak47 + (plvl * ak47));
         scarcalc3 = (scar + (plvl * scar));
+        LMGcalc4 = (LMG + (plvl * LMG));
 
         varmcalc1 = Math.round(varmcalc1);
         akcalc2 = Math.round(akcalc2);
         scarcalc3 = Math.round(scarcalc3);
+        LMGcalc4 = Math.round(LMGcalc4);
 
         $(".res1").html(varmcalc1);
         $(".res2").html(akcalc2);
         $(".res3").html(scarcalc3);
+        $(".LMG").html(LMGcalc4)
 
         //demo
 
@@ -477,23 +493,27 @@ $("#perkLVL, #chkMelee").on("click change blur focus", function() {
         flamecalc2 = (flame + (plvl * flame));
         microcalc3 = (micro + (plvl * micro));
         incendcalc4 = (incend + (plvl * incend));
+        spitfirecalc5 = (spitfire + (plvl * spitfire));
 
         caulkcalc1 = Math.round(caulkcalc1);
         flamecalc2 = Math.round(flamecalc2);
         microcalc3 = Math.round(microcalc3);
         incendcalc4 = Math.round(incendcalc4);
         tgcalc5 = incendcalc4 * pelletinc;
+        spitfirecalc5 = Math.round(spitfire);
 
         caulkcalc1a = (caulkcalc1 *.08);
         flamecalc2a = (flamecalc2 *.08);
         microcalc3a = (microcalc3 *.08);        
         incendcalc4a = (incendcalc4 *.07);
+        spitfirecalc5a = (spitfirecalc5 * .07)
 
 
         caulkcalc1a = Math.round(caulkcalc1a);
         flamecalc2a = Math.round(flamecalc2a);
         microcalc3a = Math.round(microcalc3a);
         incendcalc4a = Math.round(incendcalc4a);
+        spitfirecalc5a = Math.round(spitfirecalc5a)
 
         $(".caulk").html(caulkcalc1);
         $(".flame").html(flamecalc2);
@@ -504,6 +524,10 @@ $("#perkLVL, #chkMelee").on("click change blur focus", function() {
         $(".flameaft").html(flamecalc2a);
         $(".microaft").html(microcalc3a);
         $(".tgaft").html(incendcalc4a);
+
+        $(".spit").html(spitfirecalc5);
+        $(".spitaft").html(spitfirecalc5a);
+
 
         //gunslinger
 
@@ -664,14 +688,17 @@ else
         varmcalc1 = (varm + (plvl * varm));
         akcalc2 = (ak47 + (plvl * ak47));
         scarcalc3 = (scar + (plvl * scar));
+        LMGcalc4 = (LMG + (plvl * LMG));
 
         varmcalc1 = Math.round(varmcalc1);
         akcalc2 = Math.round(akcalc2);
         scarcalc3 = Math.round(scarcalc3);
+        LMGcalc4 = Math.round(LMGcalc4);
 
         $(".res1").html(varmcalc1);
         $(".res2").html(akcalc2);
         $(".res3").html(scarcalc3);
+        $(".LMG").html(LMGcalc4)
 
         //demo
 
@@ -719,23 +746,27 @@ else
         flamecalc2 = (flame + (plvl * flame));
         microcalc3 = (micro + (plvl * micro));
         incendcalc4 = (incend + (plvl * incend));
+        spitfirecalc5 = (spitfire + (plvl * spitfire));
 
         caulkcalc1 = Math.round(caulkcalc1);
         flamecalc2 = Math.round(flamecalc2);
         microcalc3 = Math.round(microcalc3);
         incendcalc4 = Math.round(incendcalc4);
         tgcalc5 = incendcalc4 * pelletinc;
+        spitfirecalc5 = Math.round(spitfire);
 
         caulkcalc1a = (caulkcalc1 *.08);
         flamecalc2a = (flamecalc2 *.08);
         microcalc3a = (microcalc3 *.08);        
         incendcalc4a = (incendcalc4 *.07);
+        spitfirecalc5a = (spitfirecalc5 * .07)
 
 
         caulkcalc1a = Math.round(caulkcalc1a);
         flamecalc2a = Math.round(flamecalc2a);
         microcalc3a = Math.round(microcalc3a);
         incendcalc4a = Math.round(incendcalc4a);
+        spitfirecalc5a = Math.round(spitfirecalc5a)
 
         $(".caulk").html(caulkcalc1);
         $(".flame").html(flamecalc2);
@@ -746,6 +777,9 @@ else
         $(".flameaft").html(flamecalc2a);
         $(".microaft").html(microcalc3a);
         $(".tgaft").html(incendcalc4a);
+
+        $(".spit").html(spitfirecalc5);
+        $(".spitaft").html(spitfirecalc5a);
 
         //gunslinger
 
