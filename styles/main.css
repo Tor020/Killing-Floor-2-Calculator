@@ -12,30 +12,3 @@
   margin: auto;
 }
 
-/*
-<span class = "FLOATSABOVE">This is tooltip</span>
-class ="resist"
-.FLOATSABOVE{
-        
-        position: relative;
-    
-        border: 1px solid black;
-        visibility: hidden;
-        width: 120px;
-        background-color: black;
-        color:#fff;
-        text-align: center;
-        border-radius:.5em;
-        padding: .5em;
-    
-        position:absolute;
-        z-index:1;
-}
-
-
-.resist:hover .FLOATSABOVE{
-        
-    visibility: visible
-}
-
-*/

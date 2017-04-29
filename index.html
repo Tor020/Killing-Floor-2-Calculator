@@ -1,100 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
         ga('create', 'UA-91874922-1', 'auto');
         ga('send', 'pageview');
-        </script>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="images/webico.ico">
-        <title> KF2 Calculator</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="bootstrap/css/dashboard.css" rel="stylesheet">
-        <link href="bootstrap/css/offcanvas.css" rel='stylesheet'>
-        <link href="styles/main.css" rel="stylesheet">
-    </head>
-    <body>
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span></button>
-                    <a class="navbar-brand" href="index.html">Killing Floor 2 Damage Calculator</a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="https://www.reddit.com/r/killingfloor/">KF Subreddit</a></li>
-                        <li><a href="https://docs.google.com/spreadsheets/d/1GDpg2mN1l_86U_RaDug0glFx8cZCuErwxZLiBKl9SyY/edit#gid=2068776317">Killing Floor 2 Stats Spreadsheet</a></li>
-                        <li><a href="donate.html">Donate</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/webico.ico">
+    <title> KF2 Calculator</title>
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/dashboard.css" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="styles/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-3 col-md-2 sidebar">
-                    <ul class="nav nav-sidebar">
-                        <li class="active"><a href="index.html">Overview </a></li><span class="sr-only">(current)</span>
-                        <li><a href="berserker.html">Berserker</a></li>
-                        <li><a href="commando.html">Commando</a></li>
-                        <li><a href="demolitionist.html">Demolitionist</a></li>
-                        <li><a href="fieldmedic.html">Field Medic</a></li>
-                        <li><a href="firebug.html">Firebug</a></li>
-                        <li><a href="gunslinger.html">Gunslinger</a></li>
-                        <li><a href="sharpshooter.html">Sharpshooter</a></li>
-                        <li><a href="support.html">Support</a></li>
-                        <li><a href="survivalist.html">Survivalist</a></li>
-                        <li><a href="swat.html">SWAT</a></li>
-                    </ul>
-                </div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span></button>
+                <a class="navbar-brand" href="index.html">Killing Floor 2 Damage Calculator</a>
+            </div>
+
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://www.reddit.com/r/killingfloor/">KF Subreddit</a></li>
+                    <li><a href="https://docs.google.com/spreadsheets/d/1GDpg2mN1l_86U_RaDug0glFx8cZCuErwxZLiBKl9SyY/edit#gid=2068776317">Killing Floor 2 Stats Spreadsheet</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                </ul>
             </div>
         </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-            <h3>How is weapon damage calculated?</h3>
-            <p class = "well center-block">
-                Damage is calculated using the formula and examples provided on the kf2 stats <a href="https://docs.google.com/spreadsheets/d/1GDpg2mN1l_86U_RaDug0glFx8cZCuErwxZLiBKl9SyY/edit#gid=2068776317&range=A155:B155">spreadsheet</a>.
-            </p>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-2 sidebar">
+                <ul class="nav nav-sidebar">
+                    <li class="active"><a href="index.html">Overview </a></li><span class="sr-only">(current)</span>
+                    <li><a href="berserker.html">Berserker</a></li>
+                    <li><a href="commando.html">Commando</a></li>
+                    <li><a href="demolitionist.html">Demolitionist</a></li>
+                    <li><a href="fieldmedic.html">Field Medic</a></li>
+                    <li><a href="firebug.html">Firebug</a></li>
+                    <li><a href="gunslinger.html">Gunslinger</a></li>
+                    <li><a href="sharpshooter.html">Sharpshooter</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="survivalist.html">Survivalist</a></li>
+                    <li><a href="swat.html">SWAT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <h3>How is weapon damage calculated?</h3>
+        <p class="well center-block">
+            Damage is calculated using the formula and examples provided on the kf2 stats <a href="https://docs.google.com/spreadsheets/d/1GDpg2mN1l_86U_RaDug0glFx8cZCuErwxZLiBKl9SyY/edit#gid=2068776317&range=A155:B155">spreadsheet</a>.
+        </p>
 
 
-            <h3>Website changelog</h3>
-               <ul>
-                    <li><strong>Updated for Commando LMG and Firebug Flare Pistols</strong></li>
-                    <li>Added 9mm pistol to Gunslinger and Sharpshooter</li>
-                    <li>Headshot Damage is now calculated for Sharpshooter</li>
-                    <li>bug involving massacre + butcher being checked for berserker fixed</li>
-                    <li>Added Donation page</li> 
-                    <li>ZED hp table</li>
-                    <li>Responsive design: Resizes for Mobile</li>
-              </ul>
-              <h3>Bugs and Suggestions</h3>
-            <p>Send me a message on <a href="https://www.reddit.com/user/SponsoredByMLGMtnDew/">reddit</a> or on <a href="https://steamcommunity.com/id/ObviouslyNotTor/">steam</a>.</p>
-            <h3>To do list</h3>
-            <ul>
-                <li>Zed hp table sorting</li>
-                <li>add ZED resistances appearing on mouseover</li>
-                <li>add 9mm + knife to commando and SWAT</li>
-                <li>improve damage table layout</li>
-                <li>Cleanup damage calculations: separate damage types</li>
-                <li>Shots/headshots to kill</li>
-                <li>Add Demolitions impact damage option</li>
-                <li>Medic buff scaling damage</li>
-            </ul>
-			
-</div>
+        <h3>Website changelog</h3>
+        <ul>
+            <li><strong>Updated for Commando LMG and Firebug Flare Pistols</strong></li>
+            <li>Added 9mm pistol to Gunslinger and Sharpshooter</li>
+            <li>Headshot Damage is now calculated for Sharpshooter</li>
+            <li>bug involving massacre + butcher being checked for berserker fixed</li>
+            <li>Added Donation page</li>
+            <li>ZED hp table</li>
+            <li>Responsive design: Resizes for Mobile</li>
+        </ul>
+        <h3>Bugs and Suggestions</h3>
+        <p>Send me a message on <a href="https://www.reddit.com/user/SponsoredByMLGMtnDew/">reddit</a> or on <a href="https://steamcommunity.com/id/ObviouslyNotTor/">steam</a>.</p>
+        <h3>To do list</h3>
+        <ul>
+            <li>Zed hp table sorting</li>
+            <li>add ZED resistances appearing on mouseover</li>
+            <li>add 9mm + knife to commando and SWAT</li>
+            <li>improve damage table layout</li>
+            <li>Cleanup damage calculations: separate damage types</li>
+            <li>Shots/headshots to kill</li>
+            <li>Add Demolitions impact damage option</li>
+            <li>Medic buff scaling damage</li>
+        </ul>
 
-<script src = "scripts/main.js"></script>
-<!-- jQuery (necessary for Bootstraps JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src=bootstrap/js/jquery.min.js><\/script>')</script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="bootstrap/js/offcanvas.js"></script>
+    </div>
+
+    <script src="scripts/main.js"></script>
+    <!-- jQuery (necessary for Bootstraps JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src=bootstrap/js/jquery.min.js><\/script>')
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/offcanvas.js"></script>
 
 </body>
 </html>

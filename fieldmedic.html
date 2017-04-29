@@ -1,98 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
         ga('create', 'UA-91874922-1', 'auto');
         ga('send', 'pageview');
-        </script>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="images/webico.ico">
-        <title> KF2 Calculator</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="bootstrap/css/dashboard.css" rel="stylesheet">
-        <link href="bootstrap/css/offcanvas.css" rel='stylesheet'>
-        <link href="styles/main.css" rel="stylesheet">
-    </head>
-    <body>
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span></button>
-                    <a class="navbar-brand" href="index.html">Killing Floor 2 Damage Calculator</a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="https://www.reddit.com/r/killingfloor/">KF Subreddit</a></li>
-                        <li><a href="https://docs.google.com/spreadsheets/d/1GDpg2mN1l_86U_RaDug0glFx8cZCuErwxZLiBKl9SyY/edit#gid=2068776317">Killing Floor 2 Stats Spreadsheet</a></li>
-                        <li><a href="donate.html">Donate</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/webico.ico">
+    <title> KF2 Calculator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/dashboard.css" rel="stylesheet">
+    
+    <link href="styles/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-3 col-md-2 sidebar">
-                    <ul class="nav nav-sidebar">
-                        <li><a href="index.html">Overview </a></li>
-                        <li><a href="berserker.html">Berserker</a></li>
-                        <li><a href="commando.html">Commando</a></li>
-                        <li><a href="demolitionist.html">Demolitionist</a></li>
-                        <li class="active"><a href="fieldmedic.html">Field Medic</a></li><span class="sr-only">(current)</span>
-                        <li><a href="firebug.html">Firebug</a></li>
-                        <li><a href="gunslinger.html">Gunslinger</a></li>
-                        <li><a href="sharpshooter.html">Sharpshooter</a></li>
-                        <li><a href="support.html">Support</a></li>
-                        <li><a href="survivalist.html">Survivalist</a></li>
-                        <li><a href="swat.html">SWAT</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-                    <div class="container-fluid">
-                        <h3 class="sub-header">Set Skill Choice</h3>
-                        <div class="row">
-                            <div class="col-xs-6 col-sm-3">
-                                <label> <input type="checkbox" id="chkBS" value="">Battle Surgeon</label>
-                            </div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span></button>
+                <a class="navbar-brand" href="index.html">Killing Floor 2 Damage Calculator</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://www.reddit.com/r/killingfloor/">KF Subreddit</a></li>
+                    <li><a href="https://docs.google.com/spreadsheets/d/1GDpg2mN1l_86U_RaDug0glFx8cZCuErwxZLiBKl9SyY/edit#gid=2068776317">Killing Floor 2 Stats Spreadsheet</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-2 sidebar">
+                <ul class="nav nav-sidebar">
+                    <li><a href="index.html">Overview </a></li>
+                    <li><a href="berserker.html">Berserker</a></li>
+                    <li><a href="commando.html">Commando</a></li>
+                    <li><a href="demolitionist.html">Demolitionist</a></li>
+                    <li class="active"><a href="fieldmedic.html">Field Medic</a></li><span class="sr-only">(current)</span>
+                    <li><a href="firebug.html">Firebug</a></li>
+                    <li><a href="gunslinger.html">Gunslinger</a></li>
+                    <li><a href="sharpshooter.html">Sharpshooter</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="survivalist.html">Survivalist</a></li>
+                    <li><a href="swat.html">SWAT</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                <div class="container-fluid">
+                    <h3 class="sub-header">Set Skill Choice</h3>
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-3">
+                            <label> <input type="checkbox" id="chkBS" value="">Battle Surgeon</label>
                         </div>
                     </div>
-                    <h3 class="sub-header">Damage Calculation</h3>
-                    <div class="table-responsive">
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                    <th>Gun</th>
-                                    <th>Base Damage</th>
-                                    <th></th>
-                                    <th></th>
-                                    <th>Total Damage with Perks Applied</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>HMTech-101 Pistol   </td>
-                                    <td>20</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>
-                                        <span class="res1"></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>HMTech-201 SMG  </td>
-                                    <td>15</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>
-                                        <span class="res2"></span>
-                                    </td>
-                                </tr>
+                </div>
+                <h3 class="sub-header">Damage Calculation</h3>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Gun</th>
+                                <th>Base Damage</th>
+                                <th></th>
+                                <th></th>
+                                <th>Total Damage with Perks Applied</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>HMTech-101 Pistol </td>
+                                <td>20</td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <span class="res1"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>HMTech-201 SMG </td>
+                                <td>15</td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <span class="res2"></span>
+                                </td>
+                            </tr>
                             </tr>
                             <tr>
                                 <td>HMTech-401 Assault Rifle</td>
@@ -115,7 +123,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>HMTech-301 Shotgun  </td>
+                                <td>HMTech-301 Shotgun </td>
                                 <td>20</td>
                                 <td>6</td>
                                 <td><span class="res3"></span></td>
@@ -124,146 +132,144 @@
                         </tbody>
                     </table>
                 </div>
-    <br>
-    <br>
-        <div class="container-fluid">
-            <div class="row">
-                <fieldset>
-                    <legend>Difficulty</legend>
-                    <label class="radio-inline">
+                <br>
+                <br>
+                <div class="container-fluid">
+                    <div class="row">
+                        <fieldset>
+                            <legend>Difficulty</legend>
+                            <label class="radio-inline">
                         <input type="radio" name="difficulty" id="normaldiff" value="Normal" checked class = "rButton"> Normal
                     </label>
-                    <label class="radio-inline">
+                            <label class="radio-inline">
                         <input type="radio" name="difficulty" id="harddiff" value="Hard" class = "rButton"> Hard
                     </label>
-                    <label class="radio-inline">
+                            <label class="radio-inline">
                         <input type="radio" name="difficulty" id="suicidaldiff" value="Suicidal" class = "rButton"> Suicidal
                     </label>
-                    <label class="radio-inline">
+                            <label class="radio-inline">
                         <input type="radio" name="difficulty" id="HOEdiff" value="HOE" class = "rButton"> HOE
                     </label>
-                </fieldset>
-            </div>
-            
-            <div class="row">
-                <fieldset>
-                    <legend>Choose Number of players</legend>
-                    <label class="radio-inline">
+                        </fieldset>
+                    </div>
+
+                    <div class="row">
+                        <fieldset>
+                            <legend>Choose Number of players</legend>
+                            <label class="radio-inline">
                         <input type="radio" name="numberofplayers" id="1play" value="1play" checked class = "rButton"> 1
                     </label>
-                    <label class="radio-inline">
+                            <label class="radio-inline">
                         <input type="radio" name="numberofplayers" id="2play" value="2play" class = "rButton"> 2
                     </label>
-                    <label class="radio-inline">
+                            <label class="radio-inline">
                         <input type="radio" name="numberofplayers" id="3play" value="3play" class = "rButton"> 3
                     </label>
-                    <label class="radio-inline">
+                            <label class="radio-inline">
                         <input type="radio" name="numberofplayers" id="4play" value="4play" class = "rButton"> 4
                     </label>
-                    <label class="radio-inline">
+                            <label class="radio-inline">
                         <input type="radio" name="numberofplayers" id="5play" value="5play" class = "rButton"> 5
                     </label>
-                    <label class="radio-inline">
+                            <label class="radio-inline">
                         <input type="radio" name="numberofplayers" id="6play" value="6play" class = "rButton"> 6
                     </label>
-                </fieldset>
+                        </fieldset>
+                    </div>
+                </div>
+                <h3 class="sub-header">ZEDS</h3>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>ZED</th>
+                                <th>Health</th>
+                                <th>Head Health</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr data-toggle="tooltip" data-placement="top" title="Slashing - x0.85 (Slashing_Knife - x1) Bludgeon - x0.9 Microwave - x0.25">
+                                <td> Cyst</td>
+                                <td><span class="cysthp"></span></td>
+                                <td><span class="cystHhp"></span></td>
+                            </tr>
+                            <tr>
+                                <td data-toggle="tooltip" data-placement="top" title="Ballistic_Rifle - x0.85, Slashing - x0.85 (Slashing_Knife - x1), Bludgeon - x0.9, Microwave - x0.25">Alpha Clot</td>
+                                <td><span class="alphahp"></span></td>
+                                <td><span class="alphaHhp"></span></td>
+                            </tr>
+                            <tr>
+                                <td data-toggle="tooltip" data-placement="top" title="Ballistic_Rifle - x0.85, Slashing - x0.85 (Slashing_Knife - x1), Bludgeon - x0.9, Microwave - x0.25.">Slasher</td>
+                                <td><span class="slasherhp"></span></td>
+                                <td><span class="slasherHhp"></span></td>
+                            </tr>
+                            <tr>
+                                <td data-toggle="tooltip" data-placement="top" title="Ballistic_Submachinegun - x0.35, Ballistic_AssaultRifle - x0.35 (Ballistic_AR15 - x0.4), Ballistic_Shotgun - x0.25, Ballistic_Handgun - x0.35 (Ballistic_9mm - x0.65), Ballistic_Rifle - x0.3, Slashing - x0.3, Bludgeon - x0.3, Microwave - x0.8, Explosive - x0.5, Piercing - x0.25, Toxic - x0.25.">Bloat</td>
+                                <td><span class="bloathp"></span></td>
+                                <td><span class="bloatHhp"></span></td>
+                            </tr>
+                            <tr>
+                                <td data-toggle="tooltip" data-placement="top" title="Bludgeon - x0.9, Fire - x0.9, Microwave - x0.2.">Crawler</td>
+                                <td><span class="crawlerhp"></span></td>
+                                <td><span class="crawlerHhp"></span></td>
+                            </tr>
+                            <tr>
+                                <td data-toggle="tooltip" data-placement="top" title="Slashing - x0.8, Bludgeon - x0.9, Fire - x0.85, Microwave - x0.85, Piercing - x0.75, Toxic - x0.75.">Gorefast</td>
+                                <td><span class="gorefasthp"></span></td>
+                                <td><span class="gorefastHhp"></span></td>
+                            </tr>
+                            <tr>
+                                <td data-toggle="tooltip" data-placement="top" title="Slashing - x0.8, Bludgeon - x0.9, Fire - x0.85, Microwave - x0.85, Piercing - x0.75, Toxic - x0.75.">Gorefiend</td>
+                                <td><span class="gorefiendhp"></span></td>
+                                <td><span class="gorefiendHhp"></span></td>
+                            </tr>
+                            <tr>
+                                <td data-toggle="tooltip" data-placement="top" title="Slashing - x0.8, Bludgeon - x0.9, Fire - x0.85, Microwave - x0.85, Piercing - x0.75, Toxic - x0.75.">Stalker</td>
+                                <td><span class="stalkerhp"></span></td>
+                                <td><span class="stalkerHhp"></span></td>
+                            </tr>
+                            <tr>
+                                <td data-toggle="tooltip" data-placement="top" title="Ballistic_Submachinegun - x0.75, Ballistic_AssaultRifle - x0.6, Ballistic_Handgun - x0.85 (Ballistic_9mm - x1, Ballistic_Rem1858 - x1), Ballistic_Rifle - x0.7, Slashing - x0.75, Bludgeon - x0.85, Fire - x0.5, Explosive - x0.75, Piercing - x0.5, Toxic - x0.25.">Husk </td>
+                                <td><span class="huskhp"></span></td>
+                                <td><span class="huskHhp"></span></td>
+                            </tr>
+                            <tr>
+                                <td data-toggle="tooltip" data-placement="top" title="Fire - x0.5, Microwave - x0.85, Explosive - x0.85, Piercing - x0.5, Toxic - x0.25">Siren</td>
+                                <td><span class="sirenhp"></span></td>
+                                <td><span class="sirenHhp"></span></td>
+                            </tr>
+                            <tr>
+                                <td data-toggle="tooltip" data-placement="top" title="Ballistic_Shotgun - x0.9, Ballistic_Handgun - x0.8, Fire - x0.3, Explosive - x0.4, Piercing - x0.75, Toxic - x0.25.">Scrake</td>
+                                <td><span class="scrakehp"></span></td>
+                                <td><span class="scrakeHhp"></span></td>
+                            </tr>
+                            <tr>
+                                <td data-toggle="tooltip" data-placement="top" title="Ballistic_Submachinegun - x0.5, Ballistic_AssaultRifle - x0.5, Ballistic_Shotgun - x0.75, Ballistic_Handgun - x0.75, Ballistic_Rifle - x0.75, Slashing - x0.5, Bludgeon - x0.6, Fire - x0.3, Piercing - x0.75, Toxic - x0.25.">Fleshpound</td>
+                                <td><span class="fleshpoundhp"></span></td>
+                                <td><span class="fleshpoundHhp"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Main -->
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0048982387602585" data-ad-slot="8312549669" data-ad-format="auto"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
             </div>
-        </div>
-        <h3 class="sub-header">ZEDS</h3>
-        <div class="table-responsive">
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>ZED</th>
-                        <th>Health</th>
-                        <th>Head Health</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Cyst</td>
-                        <td><span class = "cysthp"></span></td>
-                        <td><span class = "cystHhp"></span></td>
-                    </tr>
-                    <tr>
-                        <td>Alpha Clot</td>
-                        <td><span class = "alphahp"></span></td>
-                        <td><span class = "alphaHhp"></span></td>
-                    </tr>
-                    <tr>
-                        <td>Slasher</td>
-                        <td><span class = "slasherhp"></span></td>
-                        <td><span class = "slasherHhp"></span></td>
-                    </tr>
-                    <tr>
-                        <td>Bloat</td>
-                        <td><span class = "bloathp"></span></td>
-                        <td><span class = "bloatHhp"></span></td>
-                    </tr>
-                    <tr>
-                        <td>Crawler</td>
-                        <td><span class = "crawlerhp"></span></td>
-                        <td><span class = "crawlerHhp"></span></td>
-                    </tr>
-                    <tr>
-                        <td>Gorefast</td>
-                        <td><span class = "gorefasthp"></span></td>
-                        <td><span class = "gorefastHhp"></span></td>
-                    </tr>
-                    <tr>
-                        <td>Gorefiend</td>
-                        <td><span class = "gorefiendhp"></span></td>
-                        <td><span class = "gorefiendHhp"></span></td>
-                    </tr>
-                    <tr>
-                        <td>Stalker</td>
-                        <td><span class = "stalkerhp"></span></td>
-                        <td><span class = "stalkerHhp"></span></td>
-                    </tr>
-                    <tr>
-                        <td>Husk</td>
-                        <td><span class = "huskhp"></span></td>
-                        <td><span class = "huskHhp"></span></td>
-                    </tr>
-                    <tr>
-                        <td>Siren</td>
-                        <td><span class = "sirenhp"></span></td>
-                        <td><span class = "sirenHhp"></span></td>
-                    </tr>
-                    <tr>
-                        <td>Scrake</td>
-                        <td><span class = "scrakehp"></span></td>
-                        <td><span class = "scrakeHhp"></span></td>
-                    </tr>
-                    <tr>
-                        <td>Fleshpound</td>
-                        <td><span class = "fleshpoundhp"></span></td>
-                        <td><span class = "fleshpoundHhp"></span></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Main -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-0048982387602585"
-     data-ad-slot="8312549669"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-    </div>
-    
-<script src="scripts/main.js"></script>
-<script src="scripts/fieldmedic.js"></script>
-<script src="scripts/zedhp.js"></script>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script>window.jQuery || document.write('<script src=bootstrap/js/jquery.min.js><\/script>')</script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="bootstrap/js/offcanvas.js"></script>
+            <script src="scripts/main.js"></script>
+            <script src="scripts/fieldmedic.js"></script>
+            <script src="scripts/zedhp.js"></script>
+
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script>
+                window.jQuery || document.write('<script src=bootstrap/js/jquery.min.js><\/script>')
+            </script>
+            <!-- Include all compiled plugins (below), or include individual files as needed -->
+            <script src="bootstrap/js/bootstrap.min.js"></script>
+            <script src="bootstrap/js/offcanvas.js"></script>
 
 </body>
 </html>

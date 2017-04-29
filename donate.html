@@ -1,88 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
         ga('create', 'UA-91874922-1', 'auto');
         ga('send', 'pageview');
-        </script>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="images/webico.ico">
-        <title> KF2 Calculator</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="bootstrap/css/dashboard.css" rel="stylesheet">
-        <link href="bootstrap/css/offcanvas.css" rel='stylesheet'>
-        <link href="styles/main.css" rel="stylesheet">
-    </head>
-    <body>
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span></button>
-                    <a class="navbar-brand" href="index.html">Killing Floor 2 Damage Calculator</a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="https://www.reddit.com/r/killingfloor/">KF Subreddit</a></li>
-                        <li><a href="https://docs.google.com/spreadsheets/d/1GDpg2mN1l_86U_RaDug0glFx8cZCuErwxZLiBKl9SyY/edit#gid=2068776317">Killing Floor 2 Stats Spreadsheet</a></li>
-                        <li><a href="donate.html">Donate</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/webico.ico">
+    <title> KF2 Calculator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/dashboard.css" rel="stylesheet">
+    
+    <link href="styles/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-3 col-md-2 sidebar">
-                    <ul class="nav nav-sidebar">
-                        <li><a href="index.html">Overview </a></li>
-                        <li><a href="berserker.html">Berserker</a></li>
-                        <li><a href="commando.html">Commando</a></li>
-                        <li><a href="demolitionist.html">Demolitionist</a></li>
-                        <li><a href="fieldmedic.html">Field Medic</a></li>
-                        <li><a href="firebug.html">Firebug</a></li>
-                        <li><a href="gunslinger.html">Gunslinger</a></li>
-                        <li><a href="sharpshooter.html">Sharpshooter</a></li>
-                        <li><a href="support.html">Support</a></li>
-                        <li><a href="survivalist.html">Survivalist</a></li>
-                        <li><a href="swat.html">SWAT</a></li>
-                    </ul>
-                </div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span></button>
+                <a class="navbar-brand" href="index.html">Killing Floor 2 Damage Calculator</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://www.reddit.com/r/killingfloor/">KF Subreddit</a></li>
+                    <li><a href="https://docs.google.com/spreadsheets/d/1GDpg2mN1l_86U_RaDug0glFx8cZCuErwxZLiBKl9SyY/edit#gid=2068776317">Killing Floor 2 Stats Spreadsheet</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                </ul>
             </div>
         </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-2 sidebar">
+                <ul class="nav nav-sidebar">
+                    <li><a href="index.html">Overview </a></li>
+                    <li><a href="berserker.html">Berserker</a></li>
+                    <li><a href="commando.html">Commando</a></li>
+                    <li><a href="demolitionist.html">Demolitionist</a></li>
+                    <li><a href="fieldmedic.html">Field Medic</a></li>
+                    <li><a href="firebug.html">Firebug</a></li>
+                    <li><a href="gunslinger.html">Gunslinger</a></li>
+                    <li><a href="sharpshooter.html">Sharpshooter</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="survivalist.html">Survivalist</a></li>
+                    <li><a href="swat.html">SWAT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 
-    <h3>Why are you asking for donations?</h3>
-    <p class = "well center-block">
-			I'm a 26 year old self taught web developer who as of yet has no job. 
-    </p>
-  <h3>Why should I give you money?</h3>
-    <p class = "well center-block">
-			Honestly, for no other reason than you wanting to show appreciation for the work I'm doing here. If you don't want to, that's completely okay.
-    </p>
-      <h3>Is there anything else?</h3>
-    <p class = "well center-block">
-			If you're interested in hiring me, send me an <a href="mailto:kopp020@gmail.com">email</a>						
-    </p>
-   <div class = "col-md-offset-4">
-		<a href="https://www.paypal.me/WebDevKevin" class="btn btn-default btn-info">Paypal Donation</a>
-	</div>
-	</div>
+        <h3>Why are you asking for donations?</h3>
+        <p class="well center-block">
+            I'm a 26 year old self taught web developer who as of yet has no job.
+        </p>
+        <h3>Why should I give you money?</h3>
+        <p class="well center-block">
+            Honestly, for no other reason than you wanting to show appreciation for the work I'm doing here. If you don't want to, that's completely okay.
+        </p>
+        <h3>Is there anything else?</h3>
+        <p class="well center-block">
+            If you're interested in hiring me, send me an <a href="mailto:kopp020@gmail.com">email</a>
+        </p>
+        <div class="col-md-offset-4">
+            <a href="https://www.paypal.me/WebDevKevin" class="btn btn-default btn-info">Paypal Donation</a>
+        </div>
+    </div>
 
 
-<script src = "scripts/main.js"></script>
-<!-- jQuery (necessary for Bootstraps JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src=bootstrap/js/jquery.min.js><\/script>')</script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="bootstrap/js/offcanvas.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- jQuery (necessary for Bootstraps JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src=bootstrap/js/jquery.min.js><\/script>')
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/offcanvas.js"></script>
 
 </body>
 </html>
