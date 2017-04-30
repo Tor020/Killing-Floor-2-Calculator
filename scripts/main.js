@@ -1,20 +1,18 @@
+//hides the initial divs
+$(document).ready(function () {
 
-$( document ).ready(function() 
-    {
+    $(".moreInfoZedDiv").toggle();
+    $(".moreInfoDivClass").toggle();
+});
 
-
-$(".moreInfoDivClass").toggle();
-    });
-
-
-
-  $('.moreInfoButtonClass').click(function()
-  {
+//toggles to show the div on click
+$('.moreInfoButtonClass').click(function () {
     $(".moreInfoDivClass").toggle();
 
-	});
+});
 
+//toggles to show the div on click
+$('.moreInfoButtonZED').click(function () {
+    $(".moreInfoZedDiv").toggle();
 
-
-
-
+});
