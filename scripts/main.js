@@ -1,6 +1,7 @@
 //hides the initial divs
 $(document).ready(function () {
-
+    $('[data-toggle="tooltip"]').tooltip({html:true}); 
+    
     $(".moreInfoZedDiv").toggle();
     $(".moreInfoDivClass").toggle();
 });
