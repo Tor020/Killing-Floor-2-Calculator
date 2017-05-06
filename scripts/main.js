@@ -4,11 +4,13 @@ $(document).ready(function () {
     
     $(".moreInfoZedDiv").toggle();
     $(".moreInfoDivClass").toggle();
+    $(".moreInfoDivClassHire").toggle();
 });
 
 //toggles to show the div on click
 $('.moreInfoButtonClass').click(function () {
     $(".moreInfoDivClass").toggle();
+    
 
 });
 
@@ -16,4 +18,9 @@ $('.moreInfoButtonClass').click(function () {
 $('.moreInfoButtonZED').click(function () {
     $(".moreInfoZedDiv").toggle();
 
+});
+
+$('.moreInfoButtonClassHire').click(function () {
+    $(".moreInfoDivClassHire").fadeToggle("fast", "linear");
+    
 });
