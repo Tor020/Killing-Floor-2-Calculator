@@ -49,6 +49,7 @@ $('#perkLVL').on('keyup keydown', function(e) {
         calc6 = (sg500 + (plvl * sg500));        
         calc7 = (vlad + (plvl * vlad)); 
         calc8 = (hz + (plvl * hz)); 
+console.log(calc8);
 
 
         calc1 = Math.ceil(calc1);
@@ -59,6 +60,8 @@ $('#perkLVL').on('keyup keydown', function(e) {
         calc6 = Math.ceil(calc6);
         calc7 = Math.ceil(calc7);
         calc8 = Math.ceil(calc8);
+console.log(calc8);
+
 
         $(".sg1").html(calc1);
         $(".dbs1").html(calc2);
@@ -68,6 +71,7 @@ $('#perkLVL').on('keyup keydown', function(e) {
         $(".hm1").html(calc6);
         $('.ng1').html(calc7);
         $('.hz1').html(calc8);
+console.log(calc8);
 
         calc1b = calc1 * pelletsg;
         calc2b = calc2 * pelletdb;
@@ -77,6 +81,8 @@ $('#perkLVL').on('keyup keydown', function(e) {
         calc6b = calc6 * pellethmt;
         calc7b = calc7 * pelletvlad;
         calc8b = calc8 * pellethz;
+console.log(calc8b);
+
 
         $(".sg2").html(calc1b);
         $(".dbs2").html(calc2b);
@@ -86,6 +92,8 @@ $('#perkLVL').on('keyup keydown', function(e) {
         $(".hm2").html(calc6b);
         $(".ng2").html(calc7b);
         $(".hz2").html(calc8b);
+        console.log(calc8b);
+
 }
 
 	});
