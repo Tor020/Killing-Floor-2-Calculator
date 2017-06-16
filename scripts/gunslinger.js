@@ -15,6 +15,7 @@ var m1911 = 50;
 var deagle = 91;
 var mag500 = 150;
 var winch = 80;
+var spx = 180;
 var hmtp = 20;
 var grenp = 30;
 
@@ -36,6 +37,7 @@ $(function() {
         calc6 = hmtp + (plvl * hmtp);
         calc7 = grenp + (plvl * grenp);
         calc8 = _9mm + (plvl * _9mm);
+        calc9 = spx + (plvl * spx);
 
         calc1 = Math.ceil(calc1);
         calc2 = Math.ceil(calc2);
@@ -45,6 +47,7 @@ $(function() {
         calc6 = Math.ceil(calc6);
         calc7 = Math.ceil(calc7);
         calc8 = Math.ceil(calc8);
+        calc9 = Math.ceil(calc9);
 
         $(".rev1858").html(calc1);
         $(".m19").html(calc2);
@@ -53,11 +56,10 @@ $(function() {
         $(".winc").html(calc5);
         $(".hmt").html(calc6);
         $(".hx25").html(calc7);
-
         calc7 = (calc7 * 7);
         $(".hx25a").html(calc7)
-
         $(".9mm").html(calc8);
+        $(".spx").html(calc9);
 
 
     }
@@ -100,6 +102,7 @@ $("#perkLVL, #chkBone, #rackemchk, #rackem").on("click change blur focus", funct
         calc6 = hmtp + (plvl * hmtp) + (hmtp * boneB);
         calc7 = grenp + (plvl * grenp) + (grenp * boneB);
         calc8 = _9mm + (plvl * _9mm) + (_9mm * boneB);
+        calc9 = spx + (plvl * spx)  + (spx * boneB);
 
         calc1 = Math.ceil(calc1);
         calc2 = Math.ceil(calc2);
@@ -109,6 +112,7 @@ $("#perkLVL, #chkBone, #rackemchk, #rackem").on("click change blur focus", funct
         calc6 = Math.ceil(calc6);
         calc7 = Math.ceil(calc7);
         calc8 = Math.ceil(calc8);
+        calc9 = Math.ceil(calc9);
 
         $(".rev1858").html(calc1);
         $(".m19").html(calc2);
@@ -117,11 +121,10 @@ $("#perkLVL, #chkBone, #rackemchk, #rackem").on("click change blur focus", funct
         $(".winc").html(calc5);
         $(".hmt").html(calc6);
         $(".hx25").html(calc7);
-
         calc7 = (calc7 * 7);
         $(".hx25a").html(calc7)
-
         $(".9mm").html(calc8);
+        $(".spx").html(calc9);
 
     } 
 
@@ -142,6 +145,7 @@ $("#perkLVL, #chkBone, #rackemchk, #rackem").on("click change blur focus", funct
         calc6 = hmtp + (plvl * hmtp) + (rack * hmtp);
         calc7 = grenp + (plvl * grenp) + (rack * grenp);
         calc8 = _9mm + (plvl * _9mm) + (rack * _9mm);
+        calc9 = spx + (plvl * spx) + (rack * spx);
 
         calc1 = Math.ceil(calc1);
         calc2 = Math.ceil(calc2);
@@ -151,6 +155,7 @@ $("#perkLVL, #chkBone, #rackemchk, #rackem").on("click change blur focus", funct
         calc6 = Math.ceil(calc6);
         calc7 = Math.ceil(calc7);
         calc8 = Math.ceil(calc8);
+        calc9 = Math.ceil(calc9);
 
         $(".rev1858").html(calc1);
         $(".m19").html(calc2);
@@ -159,11 +164,10 @@ $("#perkLVL, #chkBone, #rackemchk, #rackem").on("click change blur focus", funct
         $(".winc").html(calc5);
         $(".hmt").html(calc6);
         $(".hx25").html(calc7);
-
         calc7 = (calc7 * 7);
         $(".hx25a").html(calc7)
-
         $(".9mm").html(calc8);
+        $(".spx").html(calc9);
 
     }
 
@@ -182,6 +186,7 @@ $("#perkLVL, #chkBone, #rackemchk, #rackem").on("click change blur focus", funct
         calc6 = hmtp + (plvl * hmtp);
         calc7 = grenp + (plvl * grenp);
         calc8 = _9mm + (plvl * _9mm);
+        calc9 = spx + (plvl * spx);
 
         calc1 = Math.ceil(calc1);
         calc2 = Math.ceil(calc2);
@@ -191,6 +196,7 @@ $("#perkLVL, #chkBone, #rackemchk, #rackem").on("click change blur focus", funct
         calc6 = Math.ceil(calc6);
         calc7 = Math.ceil(calc7);
         calc8 = Math.ceil(calc8);
+        calc9 = Math.ceil(calc9);
 
         $(".rev1858").html(calc1);
         $(".m19").html(calc2);
@@ -199,11 +205,10 @@ $("#perkLVL, #chkBone, #rackemchk, #rackem").on("click change blur focus", funct
         $(".winc").html(calc5);
         $(".hmt").html(calc6);
         $(".hx25").html(calc7);
-
         calc7 = (calc7 * 7);
         $(".hx25a").html(calc7)
-
         $(".9mm").html(calc8);
+        $(".spx").html(calc9);
 
     }
 });

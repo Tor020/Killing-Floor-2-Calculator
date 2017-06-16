@@ -11,6 +11,8 @@ var pellethmt = 6;
 var pelletvlad = 7;
 var salv = .30;
 var vlad = 30;
+var hz = 20;
+var pellethz = 10;
 
 
 var knifeli = 32;
@@ -46,6 +48,8 @@ $('#perkLVL').on('keyup keydown', function(e) {
         calc5 = (incend + (plvl * incend));
         calc6 = (sg500 + (plvl * sg500));        
         calc7 = (vlad + (plvl * vlad)); 
+        calc8 = (hz + (plvl * hz)); 
+
 
         calc1 = Math.ceil(calc1);
         calc2 = Math.ceil(calc2);
@@ -54,6 +58,7 @@ $('#perkLVL').on('keyup keydown', function(e) {
         calc5 = Math.ceil(calc5);
         calc6 = Math.ceil(calc6);
         calc7 = Math.ceil(calc7);
+        calc8 = Math.ceil(calc8);
 
         $(".sg1").html(calc1);
         $(".dbs1").html(calc2);
@@ -62,6 +67,7 @@ $('#perkLVL').on('keyup keydown', function(e) {
         $(".tg1").html(calc5);
         $(".hm1").html(calc6);
         $('.ng1').html(calc7);
+        $('.hz1').html(calc8);
 
         calc1b = calc1 * pelletsg;
         calc2b = calc2 * pelletdb;
@@ -70,6 +76,7 @@ $('#perkLVL').on('keyup keydown', function(e) {
         calc5b = calc5 * pelletinc;
         calc6b = calc6 * pellethmt;
         calc7b = calc7 * pelletvlad;
+        calc8b = calc8 * pellethz;
 
         $(".sg2").html(calc1b);
         $(".dbs2").html(calc2b);
@@ -78,6 +85,7 @@ $('#perkLVL').on('keyup keydown', function(e) {
         $(".tg2").html(calc5b);
         $(".hm2").html(calc6b);
         $(".ng2").html(calc7b);
+        $(".hz2").html(calc8b);
 }
 
 	});
@@ -94,6 +102,8 @@ $("#perkLVL, #chkSalvo").on("click change blur focus", function() {
         calc5 = (incend + (plvl * incend) + (salv * incend));
         calc6 = (sg500 + (plvl * sg500) + (salv * sg500));        
         calc7 = (vlad + (plvl * vlad) + (salv * vlad)); 
+        calc8 = (hz + (plvl * hz) + (salv * hz)); 
+
 
         calc1 = Math.ceil(calc1);
         calc2 = Math.ceil(calc2);
@@ -102,6 +112,7 @@ $("#perkLVL, #chkSalvo").on("click change blur focus", function() {
         calc5 = Math.ceil(calc5);
         calc6 = Math.ceil(calc6);
         calc7 = Math.ceil(calc7);
+        calc8 = Math.ceil(calc8);
 
         $(".sg1").html(calc1);
         $(".dbs1").html(calc2);
@@ -110,6 +121,7 @@ $("#perkLVL, #chkSalvo").on("click change blur focus", function() {
         $(".tg1").html(calc5);
         $(".hm1").html(calc6);
         $('.ng1').html(calc7);
+        $('.hz1').html(calc8);
 
         calc1b = calc1 * pelletsg;
         calc2b = calc2 * pelletdb;
@@ -118,6 +130,7 @@ $("#perkLVL, #chkSalvo").on("click change blur focus", function() {
         calc5b = calc5 * pelletinc;
         calc6b = calc6 * pellethmt;
         calc7b = calc7 * pelletvlad;
+        calc8b = calc8 * pellethz;
 
         $(".sg2").html(calc1b);
         $(".dbs2").html(calc2b);
@@ -126,6 +139,7 @@ $("#perkLVL, #chkSalvo").on("click change blur focus", function() {
         $(".tg2").html(calc5b);
         $(".hm2").html(calc6b);
         $(".ng2").html(calc7b);
+        $(".hz2").html(calc8b);
 	}
 
 	else {
@@ -139,6 +153,8 @@ $("#perkLVL, #chkSalvo").on("click change blur focus", function() {
         calc5 = (incend + (plvl * incend));
         calc6 = (sg500 + (plvl * sg500));        
         calc7 = (vlad + (plvl * vlad)); 
+        calc8 = (hz + (plvl * hz)); 
+
 
         calc1 = Math.ceil(calc1);
         calc2 = Math.ceil(calc2);
@@ -147,6 +163,7 @@ $("#perkLVL, #chkSalvo").on("click change blur focus", function() {
         calc5 = Math.ceil(calc5);
         calc6 = Math.ceil(calc6);
         calc7 = Math.ceil(calc7);
+        calc8 = Math.ceil(calc8);
 
         $(".sg1").html(calc1);
         $(".dbs1").html(calc2);
@@ -155,6 +172,7 @@ $("#perkLVL, #chkSalvo").on("click change blur focus", function() {
         $(".tg1").html(calc5);
         $(".hm1").html(calc6);
         $('.ng1').html(calc7);
+        $('.hz1').html(calc8);
 
         calc1b = calc1 * pelletsg;
         calc2b = calc2 * pelletdb;
@@ -163,6 +181,7 @@ $("#perkLVL, #chkSalvo").on("click change blur focus", function() {
         calc5b = calc5 * pelletinc;
         calc6b = calc6 * pellethmt;
         calc7b = calc7 * pelletvlad;
+        calc8b = calc8 * pellethz;
 
         $(".sg2").html(calc1b);
         $(".dbs2").html(calc2b);
@@ -171,6 +190,7 @@ $("#perkLVL, #chkSalvo").on("click change blur focus", function() {
         $(".tg2").html(calc5b);
         $(".hm2").html(calc6b);
         $(".ng2").html(calc7b);
+        $(".hz2").html(calc8b);
     }
 });
 	
