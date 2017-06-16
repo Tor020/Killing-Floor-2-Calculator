@@ -83,7 +83,7 @@ var spx = 180
 
 var sg500 = 20;
 var db = 25;
-var m4 = 25;
+var m4 = 30;
 var aa12 = 20;
 var incend = 27;
 var hmt301 = 20;
@@ -323,31 +323,31 @@ $(function() {
 
         sg500calc1 = (sg500 + (plvl * sg500));
         dbcalc2 = (db + (plvl * db));
-        dbcalc3 = (db + (plvl * db));
+        m4calc3 = (m4 + (plvl * m4));
         sg500calc4 = (sg500 + (plvl * sg500));
         hzcalc5 = (hz12 + (plvl * hz12));
 
         sg500calc1 = Math.round(sg500calc1);
         dbcalc2 = Math.round(dbcalc2);
-        dbcalc3 = Math.round(dbcalc3);
+        m4calc3 = Math.round(m4calc3);
         sg500calc4 = Math.round(sg500calc4);
         hzcalc5 = Math.round(hzcalc5);
 
         $(".sg1").html(sg500calc1);
         $(".dbs1").html(dbcalc2);
-        $(".mcs1").html(dbcalc3); 
+        $(".mcs1").html(m4calc3); 
         $(".aa121").html(sg500calc4);
         $(".hz1").html(hzcalc5);
 
         sg500calc1b = sg500calc1 * pelletsg;
         dbcalc2b = dbcalc2 * pelletdb;
-        dbcalc3b = dbcalc3 * pelletsg;
+        m4calc3b = m4calc3 * pelletsg;
         sg500calc4b = sg500calc4 * pelletsg;
         hzcalc5b = hzcalc5 * pellethz12;
 
         $(".sg2").html(sg500calc1b);
         $(".dbs2").html(dbcalc2b);
-        $(".mcs2").html(dbcalc3b);    
+        $(".mcs2").html(m4calc3b);    
         $(".aa122").html(sg500calc4b);
         $(".hz2").html(hzcalc5b);
 
@@ -586,31 +586,31 @@ $("#perkLVL, #chkMelee").on("click change blur focus", function() {
 
          sg500calc1 = (sg500 + (plvl * sg500));
         dbcalc2 = (db + (plvl * db));
-        dbcalc3 = (db + (plvl * db));
+        m4calc3 = (m4 + (plvl * m4));
         sg500calc4 = (sg500 + (plvl * sg500));
         hzcalc5 = (hz12 + (plvl * hz12));
 
         sg500calc1 = Math.round(sg500calc1);
         dbcalc2 = Math.round(dbcalc2);
-        dbcalc3 = Math.round(dbcalc3);
+        m4calc3 = Math.round(m4calc3);
         sg500calc4 = Math.round(sg500calc4);
         hzcalc5 = Math.round(hzcalc5);
 
         $(".sg1").html(sg500calc1);
         $(".dbs1").html(dbcalc2);
-        $(".mcs1").html(dbcalc3); 
+        $(".mcs1").html(m4calc3); 
         $(".aa121").html(sg500calc4);
         $(".hz1").html(hzcalc5);
 
         sg500calc1b = sg500calc1 * pelletsg;
         dbcalc2b = dbcalc2 * pelletdb;
-        dbcalc3b = dbcalc3 * pelletsg;
+        m4calc3b = m4calc3 * pelletsg;
         sg500calc4b = sg500calc4 * pelletsg;
         hzcalc5b = hzcalc5 * pellethz12;
 
         $(".sg2").html(sg500calc1b);
         $(".dbs2").html(dbcalc2b);
-        $(".mcs2").html(dbcalc3b);    
+        $(".mcs2").html(m4calc3b);    
         $(".aa122").html(sg500calc4b);
         $(".hz2").html(hzcalc5b);
 
@@ -846,31 +846,31 @@ else
 
         sg500calc1 = (sg500 + (plvl * sg500));
         dbcalc2 = (db + (plvl * db));
-        dbcalc3 = (db + (plvl * db));
+        m4calc3 = (m4 + (plvl * m4));
         sg500calc4 = (sg500 + (plvl * sg500));
         hzcalc5 = (hz12 + (plvl * hz12));
 
         sg500calc1 = Math.round(sg500calc1);
         dbcalc2 = Math.round(dbcalc2);
-        dbcalc3 = Math.round(dbcalc3);
+        m4calc3 = Math.round(m4calc3);
         sg500calc4 = Math.round(sg500calc4);
         hzcalc5 = Math.round(hzcalc5);
 
         $(".sg1").html(sg500calc1);
         $(".dbs1").html(dbcalc2);
-        $(".mcs1").html(dbcalc3); 
+        $(".mcs1").html(m4calc3); 
         $(".aa121").html(sg500calc4);
         $(".hz1").html(hzcalc5);
 
         sg500calc1b = sg500calc1 * pelletsg;
         dbcalc2b = dbcalc2 * pelletdb;
-        dbcalc3b = dbcalc3 * pelletsg;
+        m4calc3b = m4calc3 * pelletsg;
         sg500calc4b = sg500calc4 * pelletsg;
         hzcalc5b = hzcalc5 * pellethz12;
 
         $(".sg2").html(sg500calc1b);
         $(".dbs2").html(dbcalc2b);
-        $(".mcs2").html(dbcalc3b);    
+        $(".mcs2").html(m4calc3b);    
         $(".aa122").html(sg500calc4b);
         $(".hz2").html(hzcalc5b);
 
