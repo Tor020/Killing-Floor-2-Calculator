@@ -77,6 +77,7 @@ var rev18 = 30;
 var rail = 750;
 var xbow = 350;
 var m14 = 90;
+var spx = 180
 
 //support
 
@@ -93,6 +94,8 @@ var pellethmt = 6;
 var pelletvlad = 7;
 var salv = .30;
 var vlad = 30;
+var hz12 = 20;
+var pellethz12 = 10;
 
 //swat
 
@@ -300,19 +303,21 @@ $(function() {
  
         railcalc2 = rail + (plvl * rail);
         m14calc3 = m14 + (plvl * m14);
-
         winchcalc5 = winch + (plvl * winch);
         xbowcalc6 = xbow + (plvl * xbow);
+        spxcalc7 = spx + (plvl * spx);
 
         railcalc2 = Math.round(railcalc2);
         m14calc3 = Math.round(m14calc3);
         winchcalc5 = Math.round(winchcalc5);
         xbowcalc6 = Math.round(xbowcalc6);
+        spxcalc7= Math.round(spxcalc7);
 
         $(".rail").html(railcalc2);
         $(".m14").html(m14calc3);
         $(".winc").html(winchcalc5);
         $(".xbow").html(xbowcalc6);
+        $('.spx').html(spxcalc7);
 
         //support
 
@@ -320,26 +325,31 @@ $(function() {
         dbcalc2 = (db + (plvl * db));
         dbcalc3 = (db + (plvl * db));
         sg500calc4 = (sg500 + (plvl * sg500));
+        hzcalc5 = (hz12 + (plvl * hz12));
 
         sg500calc1 = Math.round(sg500calc1);
         dbcalc2 = Math.round(dbcalc2);
         dbcalc3 = Math.round(dbcalc3);
         sg500calc4 = Math.round(sg500calc4);
+        hzcalc5 = Math.round(hzcalc5);
 
         $(".sg1").html(sg500calc1);
         $(".dbs1").html(dbcalc2);
         $(".mcs1").html(dbcalc3); 
         $(".aa121").html(sg500calc4);
+        $(".hz1").html(hzcalc5);
 
         sg500calc1b = sg500calc1 * pelletsg;
         dbcalc2b = dbcalc2 * pelletdb;
         dbcalc3b = dbcalc3 * pelletsg;
         sg500calc4b = sg500calc4 * pelletsg;
+        hzcalc5b = hzcalc5 * pellethz12;
 
         $(".sg2").html(sg500calc1b);
         $(".dbs2").html(dbcalc2b);
         $(".mcs2").html(dbcalc3b);    
         $(".aa122").html(sg500calc4b);
+        $(".hz2").html(hzcalc5b);
 
         //swat
 
@@ -556,46 +566,53 @@ $("#perkLVL, #chkMelee").on("click change blur focus", function() {
  
         railcalc2 = rail + (plvl * rail);
         m14calc3 = m14 + (plvl * m14);
-
         winchcalc5 = winch + (plvl * winch);
         xbowcalc6 = xbow + (plvl * xbow);
+        spxcalc7 = spx + (plvl * spx);
 
         railcalc2 = Math.round(railcalc2);
         m14calc3 = Math.round(m14calc3);
         winchcalc5 = Math.round(winchcalc5);
         xbowcalc6 = Math.round(xbowcalc6);
+        spxcalc7= Math.round(spxcalc7);
 
         $(".rail").html(railcalc2);
         $(".m14").html(m14calc3);
         $(".winc").html(winchcalc5);
         $(".xbow").html(xbowcalc6);
+        $('.spx').html(spxcalc7);
 
         //support
 
-        sg500calc1 = (sg500 + (plvl * sg500));
+         sg500calc1 = (sg500 + (plvl * sg500));
         dbcalc2 = (db + (plvl * db));
         dbcalc3 = (db + (plvl * db));
         sg500calc4 = (sg500 + (plvl * sg500));
+        hzcalc5 = (hz12 + (plvl * hz12));
 
         sg500calc1 = Math.round(sg500calc1);
         dbcalc2 = Math.round(dbcalc2);
         dbcalc3 = Math.round(dbcalc3);
         sg500calc4 = Math.round(sg500calc4);
+        hzcalc5 = Math.round(hzcalc5);
 
         $(".sg1").html(sg500calc1);
         $(".dbs1").html(dbcalc2);
         $(".mcs1").html(dbcalc3); 
         $(".aa121").html(sg500calc4);
+        $(".hz1").html(hzcalc5);
 
         sg500calc1b = sg500calc1 * pelletsg;
         dbcalc2b = dbcalc2 * pelletdb;
         dbcalc3b = dbcalc3 * pelletsg;
         sg500calc4b = sg500calc4 * pelletsg;
+        hzcalc5b = hzcalc5 * pellethz12;
 
         $(".sg2").html(sg500calc1b);
         $(".dbs2").html(dbcalc2b);
         $(".mcs2").html(dbcalc3b);    
         $(".aa122").html(sg500calc4b);
+        $(".hz2").html(hzcalc5b);
 
         //swat
 
@@ -808,19 +825,22 @@ else
  
         railcalc2 = rail + (plvl * rail);
         m14calc3 = m14 + (plvl * m14);
-
         winchcalc5 = winch + (plvl * winch);
         xbowcalc6 = xbow + (plvl * xbow);
+        spxcalc7 = spx + (plvl * spx);
 
         railcalc2 = Math.round(railcalc2);
         m14calc3 = Math.round(m14calc3);
         winchcalc5 = Math.round(winchcalc5);
         xbowcalc6 = Math.round(xbowcalc6);
+        spxcalc7= Math.round(spxcalc7);
 
         $(".rail").html(railcalc2);
         $(".m14").html(m14calc3);
         $(".winc").html(winchcalc5);
         $(".xbow").html(xbowcalc6);
+        $('.spx').html(spxcalc7);
+
 
         //support
 
@@ -828,26 +848,31 @@ else
         dbcalc2 = (db + (plvl * db));
         dbcalc3 = (db + (plvl * db));
         sg500calc4 = (sg500 + (plvl * sg500));
+        hzcalc5 = (hz12 + (plvl * hz12));
 
         sg500calc1 = Math.round(sg500calc1);
         dbcalc2 = Math.round(dbcalc2);
         dbcalc3 = Math.round(dbcalc3);
         sg500calc4 = Math.round(sg500calc4);
+        hzcalc5 = Math.round(hzcalc5);
 
         $(".sg1").html(sg500calc1);
         $(".dbs1").html(dbcalc2);
         $(".mcs1").html(dbcalc3); 
         $(".aa121").html(sg500calc4);
+        $(".hz1").html(hzcalc5);
 
         sg500calc1b = sg500calc1 * pelletsg;
         dbcalc2b = dbcalc2 * pelletdb;
         dbcalc3b = dbcalc3 * pelletsg;
         sg500calc4b = sg500calc4 * pelletsg;
+        hzcalc5b = hzcalc5 * pellethz12;
 
         $(".sg2").html(sg500calc1b);
         $(".dbs2").html(dbcalc2b);
         $(".mcs2").html(dbcalc3b);    
         $(".aa122").html(sg500calc4b);
+        $(".hz2").html(hzcalc5b);
 
         //swat
 
