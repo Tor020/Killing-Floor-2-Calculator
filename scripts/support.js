@@ -1,6 +1,6 @@
 var sg500 = 20;
 var db = 25;
-var m4 = 25;
+var m4 = 30;
 var aa12 = 20;
 var incend = 27;
 var hmt301 = 20;
@@ -43,13 +43,12 @@ $('#perkLVL').on('keyup keydown', function(e) {
 
         calc1 = (sg500 + (plvl * sg500));
         calc2 = (db + (plvl * db));
-        calc3 = (db + (plvl * db));
+        calc3 = (m4 + (plvl * m4));
         calc4 = (sg500 + (plvl * sg500));
         calc5 = (incend + (plvl * incend));
         calc6 = (sg500 + (plvl * sg500));        
         calc7 = (vlad + (plvl * vlad)); 
         calc8 = (hz + (plvl * hz)); 
-console.log(calc8);
 
 
         calc1 = Math.ceil(calc1);
@@ -60,7 +59,6 @@ console.log(calc8);
         calc6 = Math.ceil(calc6);
         calc7 = Math.ceil(calc7);
         calc8 = Math.ceil(calc8);
-console.log(calc8);
 
 
         $(".sg1").html(calc1);
@@ -71,7 +69,6 @@ console.log(calc8);
         $(".hm1").html(calc6);
         $('.ng1').html(calc7);
         $('.hz1').html(calc8);
-console.log(calc8);
 
         calc1b = calc1 * pelletsg;
         calc2b = calc2 * pelletdb;
@@ -81,7 +78,6 @@ console.log(calc8);
         calc6b = calc6 * pellethmt;
         calc7b = calc7 * pelletvlad;
         calc8b = calc8 * pellethz;
-console.log(calc8b);
 
 
         $(".sg2").html(calc1b);
@@ -92,7 +88,6 @@ console.log(calc8b);
         $(".hm2").html(calc6b);
         $(".ng2").html(calc7b);
         $(".hz2").html(calc8b);
-        console.log(calc8b);
 
 }
 
@@ -105,7 +100,7 @@ $("#perkLVL, #chkSalvo").on("click change blur focus", function() {
 
         calc1 = (sg500 + (plvl * sg500) + (salv * sg500));
         calc2 = (db + (plvl * db) + (salv * db));
-        calc3 = (db + (plvl * db) + (salv * db));
+        calc3 = (m4 + (plvl * m4) + (salv * m4));
         calc4 = (sg500 + (plvl * sg500) + (salv * sg500));
         calc5 = (incend + (plvl * incend) + (salv * incend));
         calc6 = (sg500 + (plvl * sg500) + (salv * sg500));        
@@ -156,7 +151,7 @@ $("#perkLVL, #chkSalvo").on("click change blur focus", function() {
 
         calc1 = (sg500 + (plvl * sg500));
         calc2 = (db + (plvl * db));
-        calc3 = (db + (plvl * db));
+        calc3 = (m4 + (plvl * m4));
         calc4 = (sg500 + (plvl * sg500));
         calc5 = (incend + (plvl * incend));
         calc6 = (sg500 + (plvl * sg500));        
