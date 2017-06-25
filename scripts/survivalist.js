@@ -30,10 +30,10 @@ var bcm = 175;
 
 //commando
 
-var LMG = 25;
+var LMG = 30;
 var varm = 30;
 var ak47 = 40;
-var scar = 50;
+var scar = 55;
 
 //demolitionist
 

@@ -8,8 +8,8 @@ ROUNDED or ROUNDED UP -
 //base damage of each of the core guns
 var varm = 30;
 var ak47 = 40;
-var LMG = 25;
-var scar = 50;
+var LMG = 30;
+var scar = 55;
 
 var _9mm = 15;
 var knifeli = 32;
