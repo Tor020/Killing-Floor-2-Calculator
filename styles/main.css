@@ -1,5 +1,6 @@
 body
 {
+
     padding-top: 50px;
     font-size: 16px; 
     line-height:150%;
@@ -7,6 +8,9 @@ body
     color:#333333;
 }
 
+.sidebar{
+
+}
 /*
   Global add-ons
  */
