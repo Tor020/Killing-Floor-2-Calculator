@@ -7,7 +7,6 @@ body
     font-family: 'Roboto', sans-serif;
     color:#333333;
 }
-
 .sidebar{
 
 }
@@ -41,7 +40,6 @@ Hide default border to remove 1px line.
     border-right: 1px solid #eee;
   }
 }
-
 .nav-sidebar {
   margin-right: -21px; /* 20px padding + 1px border */
   margin-bottom: 20px;
@@ -94,11 +92,22 @@ Hide default border to remove 1px line.
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffe2e2e2",endColorstr="#fffefefe",GradientType=0);
     }
 }
-.p1{
+.highlight{
   background-color:rgba(0,0,0,0.7);
   color:#f5f5f5;
+}
+.highlight>p{padding-top:.5em;
 }
 .adsbygoogle{
   margin-top:3em;
   text-align:center;
+}
+.moreInfoDivClass>ul{
+  margin:0 0 1em 0 
+}
+.moreInfoButtonClass{
+  margin:0 0 2em 0 
+}
+.moreInfoButtonClassZED{
+  
 }
