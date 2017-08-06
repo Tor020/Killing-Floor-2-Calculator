@@ -94,3 +94,12 @@ Hide default border to remove 1px line.
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffe2e2e2",endColorstr="#fffefefe",GradientType=0);
     }
 }
+.p1{
+  background-color:rgba(0,0,0,0.7);
+  color:#f5f5f5;
+}
+
+.adsbygoogle{
+  margin-top:3em;
+  text-align:center;
+}
