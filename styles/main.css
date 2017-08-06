@@ -35,7 +35,7 @@ Hide default border to remove 1px line.
     z-index: 1000;
     display: block;
     padding: 20px;
-    overflow-x: scroll;
+    overflow-x: hidden;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
     background-color: #f5f5f5;
     border-right: 1px solid #eee;
@@ -98,7 +98,6 @@ Hide default border to remove 1px line.
   background-color:rgba(0,0,0,0.7);
   color:#f5f5f5;
 }
-
 .adsbygoogle{
   margin-top:3em;
   text-align:center;
