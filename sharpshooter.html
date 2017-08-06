@@ -3,9 +3,9 @@
 
 <head>
     <script>
-        (function(i, s, o, g, r, a, m) {
+        (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
+            i[r] = i[r] || function () {
                 (i[r].q = i[r].q || []).push(arguments)
             }, i[r].l = 1 * new Date();
             a = s.createElement(o),
@@ -16,7 +16,6 @@
         })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
         ga('create', 'UA-91874922-1', 'auto');
         ga('send', 'pageview');
-
     </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,7 +25,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-    
+
     <link href="styles/theme.default.min.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
 </head>
@@ -35,7 +34,8 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span></button>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                    aria-controls="navbar"><span class="sr-only">Toggle navigation</span></button>
                 <a class="navbar-brand" href="index.html">Killing Floor 2 Damage Calculator</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
@@ -63,6 +63,16 @@
                     <li><a href="survivalist.html">Survivalist</a></li>
                     <li><a href="swat.html">SWAT</a></li>
                 </ul>
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- sidebar res -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-0048982387602585"
+     data-ad-slot="5665809515"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
             </div>
 
 
@@ -312,12 +322,14 @@
                     <ol>
                         <li>Calculate damage in weapon-specific formula applies to melee weapon swing direction</li>
                         <li> The damage is then rounded down based on the hitzone.</li>
-                        For example, if you shoot a Bloat's cleavers the formula would be NewDmg = (BaseWeaponDmg * .2) in most cases this causes a base damage reduction
+                        For example, if you shoot a Bloat's cleavers the formula would be NewDmg = (BaseWeaponDmg * .2) in most cases this causes
+                        a base damage reduction
                         <li>ZED Vulnerability or Resistance to Damage types is then applied</li>
                         <li>Check if ZED is blocking, and if so, adjust Damage value</li>
                         <li>Perk damage values are applied at this step.</li>
                         <li>Check for Field Medic Injection buff Damage = Roundup (Damage x Focus Injection Mod)</li>
-                        <li>Zed <a href="https://docs.google.com/spreadsheets/d/1GDpg2mN1l_86U_RaDug0glFx8cZCuErwxZLiBKl9SyY/edit#gid=2068776317&range=A122:B122">Decapitation </a>Decapitation <a href="https://docs.google.com/spreadsheets/d/1GDpg2mN1l_86U_RaDug0glFx8cZCuErwxZLiBKl9SyY/edit#gid=2068776317&range=A281:E281">check</a> is done</li>
+                        <li>Zed <a href="https://docs.google.com/spreadsheets/d/1GDpg2mN1l_86U_RaDug0glFx8cZCuErwxZLiBKl9SyY/edit#gid=2068776317&range=A122:B122">Decapitation </a>Decapitation
+                            <a href="https://docs.google.com/spreadsheets/d/1GDpg2mN1l_86U_RaDug0glFx8cZCuErwxZLiBKl9SyY/edit#gid=2068776317&range=A281:E281">check</a>                            is done</li>
                     </ol>
                     <br>
                     <strong>TLDR</strong>: Start with weapon base damage
@@ -335,37 +347,45 @@
                     <ul>
                         <li>Information above paraphrased from the spreadsheet at this
                             <a href="https://docs.google.com/spreadsheets/d/1GDpg2mN1l_86U_RaDug0glFx8cZCuErwxZLiBKl9SyY/edit#gid=2068776317&range=A271:B271">section</a></li>
-                        <li>The damage type Resistances and Vulnerabilities are applied BEFORE perk bonuses (This can be very significant to the actual damage done)</li>
+                        <li>The damage type Resistances and Vulnerabilities are applied BEFORE perk bonuses (This can be very
+                            significant to the actual damage done)</li>
                         <li>Slashing Damage Resistance does not apply to Class knives on cyst, Alpha Clot and Slasher</li>
                         <li>Exact damage type for each weapon found on corresponding class pages</li>
-                        <li>If the ZED isn't Resistant or Vulnerable to a damage type, you can skip step 3 as the modifier is a neutral x 1.0 (nothing changes) </li>
+                        <li>If the ZED isn't Resistant or Vulnerable to a damage type, you can skip step 3 as the modifier is
+                            a neutral x 1.0 (nothing changes) </li>
                         <li>Sirens and Bloats have no vulnerable Damage Types</li>
-                        <li>If the tooltip for each ZED does not list a damage type for Resistances or Vulnerabilities, it is neutral</li>
+                        <li>If the tooltip for each ZED does not list a damage type for Resistances or Vulnerabilities, it is
+                            neutral
+                        </li>
                     </ul>
 
                 </div>
-                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- Main -->
-                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0048982387602585" data-ad-slot="8312549669" data-ad-format="auto"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
 
-                </script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Main -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-0048982387602585"
+     data-ad-slot="8312549669"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
-        </div>
-        
-        <script src="scripts/main.js"></script>
-        <script src="scripts/sharpshooter.js"></script>
-        <script src="scripts/zedhp.js"></script>
 
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script>
-            window.jQuery || document.write('<script src=bootstrap/js/jquery.min.js><\/script>')
+            </div>
 
-        </script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-        
+            <script src="scripts/main.js"></script>
+            <script src="scripts/sharpshooter.js"></script>
+            <script src="scripts/zedhp.js"></script>
+
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script>
+                window.jQuery || document.write('<script src=bootstrap/js/jquery.min.js><\/script>')
+            </script>
+            <!-- Include all compiled plugins (below), or include individual files as needed -->
+            <script src="bootstrap/js/bootstrap.min.js"></script>
+
 
 </body>
 
